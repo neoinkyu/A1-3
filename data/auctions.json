@@ -1,0 +1,5326 @@
+{
+  "metadata": {
+    "project": "A1-3",
+    "dataset_name": "파산재단 매각물건 샘플 데이터",
+    "record_count": 100,
+    "format_version": "1.0",
+    "generated_for": "교육용 AI 웹 서비스",
+    "disclaimer": "모든 사건번호, 채무자명, 파산관재인, 연락처, 주소 및 매각조건은 교육용 가상 데이터입니다. 실제 대법원 파산재단 공고와 무관합니다."
+  },
+  "auctions": [
+    {
+      "id": "A001",
+      "court": "울산지방법원",
+      "case_number": "2026하단1001",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 다온물산",
+      "trustee": {
+        "name": "이서윤",
+        "phone": "052-0000-1001",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee001@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "단독주택",
+        "title": "울산광역시 남구 삼산동 101-2 소재 단독주택",
+        "location": "울산광역시 남구 삼산동 101-2",
+        "reference_value": 868100000,
+        "minimum_price": 347200000,
+        "price_ratio": 0.4,
+        "details": {
+          "property_type": "단독주택",
+          "land_area_m2": 1345.13,
+          "building_area_m2": 246.83,
+          "exclusive_area_m2": null,
+          "land_category": "대",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-08-23",
+        "bid_start_date": "2026-08-18",
+        "bid_end_date": "2026-08-23",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-02",
+        "expire_date": "2026-08-23"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "단독주택",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A002",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1002",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 누리건설",
+      "trustee": {
+        "name": "박준호",
+        "phone": "054-0000-1002",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee002@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "상가",
+        "title": "경상북도 포항시 북구 죽도동 102-3 소재 상가",
+        "location": "경상북도 포항시 북구 죽도동 102-3",
+        "reference_value": 995300000,
+        "minimum_price": 398100000,
+        "price_ratio": 0.4,
+        "details": {
+          "property_type": "상가",
+          "land_area_m2": 1343.58,
+          "building_area_m2": 506.74,
+          "exclusive_area_m2": null,
+          "land_category": "잡종지",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "현황 미확인",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-08-26",
+        "bid_start_date": "2026-08-21",
+        "bid_end_date": "2026-08-26",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-04",
+        "expire_date": "2026-08-26"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "상가",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A003",
+      "court": "부산회생법원",
+      "case_number": "2026하합1003",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 해솔시스템",
+      "trustee": {
+        "name": "최가은",
+        "phone": "051-0000-1003",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee003@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "창고",
+        "title": "부산광역시 사상구 괘법동 103-4 소재 창고",
+        "location": "부산광역시 사상구 괘법동 103-4",
+        "reference_value": 71600000,
+        "minimum_price": 25100000,
+        "price_ratio": 0.351,
+        "details": {
+          "property_type": "창고",
+          "land_area_m2": 424.8,
+          "building_area_m2": 472.13,
+          "exclusive_area_m2": null,
+          "land_category": "대",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "공실 추정",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-08-29",
+        "bid_start_date": "2026-08-24",
+        "bid_end_date": "2026-08-29",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-08-06",
+        "expire_date": "2026-08-29"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "창고",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A004",
+      "court": "울산지방법원",
+      "case_number": "2025하단1004",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 미래인베스트",
+      "trustee": {
+        "name": "정현우",
+        "phone": "052-0000-1004",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee004@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "공장",
+        "title": "울산광역시 남구 삼산동 104-5 소재 공장",
+        "location": "울산광역시 남구 삼산동 104-5",
+        "reference_value": 765600000,
+        "minimum_price": 382800000,
+        "price_ratio": 0.5,
+        "details": {
+          "property_type": "공장",
+          "land_area_m2": 1183.8,
+          "building_area_m2": 506.37,
+          "exclusive_area_m2": null,
+          "land_category": "잡종지",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-09-01",
+        "bid_start_date": "2026-08-27",
+        "bid_end_date": "2026-09-01",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-08",
+        "expire_date": "2026-09-01"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "공장",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A005",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1005",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 한빛산업",
+      "trustee": {
+        "name": "한지민",
+        "phone": "054-0000-1005",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee005@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "토지",
+        "title": "경상북도 포항시 북구 죽도동 105-6 소재 토지",
+        "location": "경상북도 포항시 북구 죽도동 105-6",
+        "reference_value": 618800000,
+        "minimum_price": 371300000,
+        "price_ratio": 0.6,
+        "details": {
+          "property_type": "토지",
+          "land_area_m2": 1375.5,
+          "building_area_m2": null,
+          "exclusive_area_m2": null,
+          "land_category": "대",
+          "ownership_type": "지분",
+          "share_rate": 0.2,
+          "occupancy_status": "현황 미확인",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-09-04",
+        "bid_start_date": "2026-08-30",
+        "bid_end_date": "2026-09-04",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-10",
+        "expire_date": "2026-09-04"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "토지",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A006",
+      "court": "부산회생법원",
+      "case_number": "2026하합1006",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 새롬물산",
+      "trustee": {
+        "name": "윤도현",
+        "phone": "051-0000-1006",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee006@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "다가구주택",
+        "title": "부산광역시 사상구 괘법동 106-7 소재 다가구주택",
+        "location": "부산광역시 사상구 괘법동 106-7",
+        "reference_value": 476000000,
+        "minimum_price": 285600000,
+        "price_ratio": 0.6,
+        "details": {
+          "property_type": "다가구주택",
+          "land_area_m2": 418.95,
+          "building_area_m2": 695.42,
+          "exclusive_area_m2": null,
+          "land_category": "전",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "공실 추정",
+          "farmland_certificate": true
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-09-07",
+        "bid_start_date": "2026-09-02",
+        "bid_end_date": "2026-09-07",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-12",
+        "expire_date": "2026-09-07"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "다가구주택",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A007",
+      "court": "울산지방법원",
+      "case_number": "2026하단1007",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 온누리건설",
+      "trustee": {
+        "name": "오수빈",
+        "phone": "052-0000-1007",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee007@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "오피스텔",
+        "title": "울산광역시 남구 삼산동 107-8 소재 오피스텔",
+        "location": "울산광역시 남구 삼산동 107-8",
+        "reference_value": 528000000,
+        "minimum_price": 211200000,
+        "price_ratio": 0.4,
+        "details": {
+          "property_type": "오피스텔",
+          "land_area_m2": 1531.59,
+          "building_area_m2": 557.22,
+          "exclusive_area_m2": 125.89,
+          "land_category": "답",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "현황 미확인",
+          "farmland_certificate": true
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-09-10",
+        "bid_start_date": "2026-09-05",
+        "bid_end_date": "2026-09-10",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-08-14",
+        "expire_date": "2026-09-10"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "오피스텔",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A008",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2025하단1008",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 세움시스템",
+      "trustee": {
+        "name": "임태훈",
+        "phone": "054-0000-1008",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee008@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "아파트",
+        "title": "경상북도 포항시 북구 죽도동 108-9 소재 아파트",
+        "location": "경상북도 포항시 북구 죽도동 108-9",
+        "reference_value": 526200000,
+        "minimum_price": 210500000,
+        "price_ratio": 0.4,
+        "details": {
+          "property_type": "아파트",
+          "land_area_m2": 555.99,
+          "building_area_m2": 578.77,
+          "exclusive_area_m2": 135.68,
+          "land_category": "공장용지",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "제3자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-09-13",
+        "bid_start_date": "2026-09-08",
+        "bid_end_date": "2026-09-13",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-16",
+        "expire_date": "2026-09-13"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "아파트",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A009",
+      "court": "부산회생법원",
+      "case_number": "2026하합1009",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 이룸인베스트",
+      "trustee": {
+        "name": "서지연",
+        "phone": "051-0000-1009",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee009@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "단독주택",
+        "title": "부산광역시 사상구 괘법동 109-1 소재 단독주택",
+        "location": "부산광역시 사상구 괘법동 109-1",
+        "reference_value": 786700000,
+        "minimum_price": 393400000,
+        "price_ratio": 0.5,
+        "details": {
+          "property_type": "단독주택",
+          "land_area_m2": 162.42,
+          "building_area_m2": 606.99,
+          "exclusive_area_m2": null,
+          "land_category": "잡종지",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "제3자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-09-16",
+        "bid_start_date": "2026-09-11",
+        "bid_end_date": "2026-09-16",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-18",
+        "expire_date": "2026-09-16"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "단독주택",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A010",
+      "court": "울산지방법원",
+      "case_number": "2026하단1010",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 바른산업",
+      "trustee": {
+        "name": "조성우",
+        "phone": "052-0000-1010",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee010@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "상가",
+        "title": "울산광역시 남구 삼산동 110-2 소재 상가",
+        "location": "울산광역시 남구 삼산동 110-2",
+        "reference_value": 134600000,
+        "minimum_price": 67300000,
+        "price_ratio": 0.5,
+        "details": {
+          "property_type": "상가",
+          "land_area_m2": 709.02,
+          "building_area_m2": 427.2,
+          "exclusive_area_m2": null,
+          "land_category": "대",
+          "ownership_type": "지분",
+          "share_rate": 0.25,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-09-19",
+        "bid_start_date": "2026-09-14",
+        "bid_end_date": "2026-09-19",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-20",
+        "expire_date": "2026-09-19"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "상가",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A011",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1011",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 푸른물산",
+      "trustee": {
+        "name": "문예린",
+        "phone": "054-0000-1011",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee011@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "창고",
+        "title": "경상북도 포항시 북구 죽도동 111-3 소재 창고",
+        "location": "경상북도 포항시 북구 죽도동 111-3",
+        "reference_value": 515200000,
+        "minimum_price": 329700000,
+        "price_ratio": 0.64,
+        "details": {
+          "property_type": "창고",
+          "land_area_m2": 1219.51,
+          "building_area_m2": 642.07,
+          "exclusive_area_m2": null,
+          "land_category": "전",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "공실 추정",
+          "farmland_certificate": true
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-09-22",
+        "bid_start_date": "2026-09-17",
+        "bid_end_date": "2026-09-22",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-08-22",
+        "expire_date": "2026-09-22"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "창고",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A012",
+      "court": "부산회생법원",
+      "case_number": "2025하합1012",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 한결건설",
+      "trustee": {
+        "name": "강우진",
+        "phone": "051-0000-1012",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee012@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "공장",
+        "title": "부산광역시 사상구 괘법동 112-4 소재 공장",
+        "location": "부산광역시 사상구 괘법동 112-4",
+        "reference_value": 730100000,
+        "minimum_price": 365000000,
+        "price_ratio": 0.5,
+        "details": {
+          "property_type": "공장",
+          "land_area_m2": 853.58,
+          "building_area_m2": 268.5,
+          "exclusive_area_m2": null,
+          "land_category": "전",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-09-25",
+        "bid_start_date": "2026-09-20",
+        "bid_end_date": "2026-09-25",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-24",
+        "expire_date": "2026-09-25"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "공장",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A013",
+      "court": "울산지방법원",
+      "case_number": "2026하단1013",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 라온시스템",
+      "trustee": {
+        "name": "신하늘",
+        "phone": "052-0000-1013",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee013@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "토지",
+        "title": "울산광역시 남구 삼산동 113-5 소재 토지",
+        "location": "울산광역시 남구 삼산동 113-5",
+        "reference_value": 1134700000,
+        "minimum_price": 397100000,
+        "price_ratio": 0.35,
+        "details": {
+          "property_type": "토지",
+          "land_area_m2": 1486.37,
+          "building_area_m2": null,
+          "exclusive_area_m2": null,
+          "land_category": "전",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "제3자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-09-28",
+        "bid_start_date": "2026-09-23",
+        "bid_end_date": "2026-09-28",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-26",
+        "expire_date": "2026-09-28"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "토지",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A014",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1014",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 마루인베스트",
+      "trustee": {
+        "name": "백지훈",
+        "phone": "054-0000-1014",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee014@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "다가구주택",
+        "title": "경상북도 포항시 북구 죽도동 114-6 소재 다가구주택",
+        "location": "경상북도 포항시 북구 죽도동 114-6",
+        "reference_value": 380900000,
+        "minimum_price": 152400000,
+        "price_ratio": 0.4,
+        "details": {
+          "property_type": "다가구주택",
+          "land_area_m2": 1647.12,
+          "building_area_m2": 525.61,
+          "exclusive_area_m2": null,
+          "land_category": "전",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "제3자 점유",
+          "farmland_certificate": true
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-10-01",
+        "bid_start_date": "2026-09-26",
+        "bid_end_date": "2026-10-01",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-28",
+        "expire_date": "2026-10-01"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "다가구주택",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A015",
+      "court": "부산회생법원",
+      "case_number": "2026하합1015",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 늘봄산업",
+      "trustee": {
+        "name": "배유나",
+        "phone": "051-0000-1015",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee015@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "오피스텔",
+        "title": "부산광역시 사상구 괘법동 115-7 소재 오피스텔",
+        "location": "부산광역시 사상구 괘법동 115-7",
+        "reference_value": 889100000,
+        "minimum_price": 711300000,
+        "price_ratio": 0.8,
+        "details": {
+          "property_type": "오피스텔",
+          "land_area_m2": 1597.04,
+          "building_area_m2": 591.07,
+          "exclusive_area_m2": 42.86,
+          "land_category": "임야",
+          "ownership_type": "지분",
+          "share_rate": 0.2,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-10-04",
+        "bid_start_date": "2026-09-29",
+        "bid_end_date": "2026-10-04",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-09-14",
+        "expire_date": "2026-10-04"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "오피스텔",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A016",
+      "court": "울산지방법원",
+      "case_number": "2025하단1016",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 아람물산",
+      "trustee": {
+        "name": "노준혁",
+        "phone": "052-0000-1016",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee016@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "아파트",
+        "title": "울산광역시 남구 삼산동 116-8 소재 아파트",
+        "location": "울산광역시 남구 삼산동 116-8",
+        "reference_value": 1006500000,
+        "minimum_price": 603900000,
+        "price_ratio": 0.6,
+        "details": {
+          "property_type": "아파트",
+          "land_area_m2": 1068.87,
+          "building_area_m2": 811.62,
+          "exclusive_area_m2": 74.93,
+          "land_category": "잡종지",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-10-07",
+        "bid_start_date": "2026-10-02",
+        "bid_end_date": "2026-10-07",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-16",
+        "expire_date": "2026-10-07"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "아파트",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A017",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1017",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 다솜건설",
+      "trustee": {
+        "name": "류소연",
+        "phone": "054-0000-1017",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee017@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "단독주택",
+        "title": "경상북도 포항시 북구 죽도동 117-9 소재 단독주택",
+        "location": "경상북도 포항시 북구 죽도동 117-9",
+        "reference_value": 211300000,
+        "minimum_price": 169000000,
+        "price_ratio": 0.8,
+        "details": {
+          "property_type": "단독주택",
+          "land_area_m2": 1370.18,
+          "building_area_m2": 779.85,
+          "exclusive_area_m2": null,
+          "land_category": "대",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-10-10",
+        "bid_start_date": "2026-10-05",
+        "bid_end_date": "2026-10-10",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-18",
+        "expire_date": "2026-10-10"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "단독주택",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A018",
+      "court": "부산회생법원",
+      "case_number": "2026하합1018",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 채움시스템",
+      "trustee": {
+        "name": "장태민",
+        "phone": "051-0000-1018",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee018@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "상가",
+        "title": "부산광역시 사상구 괘법동 118-1 소재 상가",
+        "location": "부산광역시 사상구 괘법동 118-1",
+        "reference_value": 852400000,
+        "minimum_price": 417700000,
+        "price_ratio": 0.49,
+        "details": {
+          "property_type": "상가",
+          "land_area_m2": 783.0,
+          "building_area_m2": 89.95,
+          "exclusive_area_m2": null,
+          "land_category": "잡종지",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "현황 미확인",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-10-13",
+        "bid_start_date": "2026-10-08",
+        "bid_end_date": "2026-10-13",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-20",
+        "expire_date": "2026-10-13"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "상가",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A019",
+      "court": "울산지방법원",
+      "case_number": "2026하단1019",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 에이스인베스트",
+      "trustee": {
+        "name": "고은채",
+        "phone": "052-0000-1019",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee019@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "창고",
+        "title": "울산광역시 남구 삼산동 119-2 소재 창고",
+        "location": "울산광역시 남구 삼산동 119-2",
+        "reference_value": 811000000,
+        "minimum_price": 648800000,
+        "price_ratio": 0.8,
+        "details": {
+          "property_type": "창고",
+          "land_area_m2": 482.49,
+          "building_area_m2": 513.54,
+          "exclusive_area_m2": null,
+          "land_category": "공장용지",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "공실 추정",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-10-16",
+        "bid_start_date": "2026-10-11",
+        "bid_end_date": "2026-10-16",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-09-22",
+        "expire_date": "2026-10-16"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "창고",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A020",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2025하단1020",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 가온산업",
+      "trustee": {
+        "name": "김민수",
+        "phone": "054-0000-1020",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee020@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "공장",
+        "title": "경상북도 포항시 북구 죽도동 120-3 소재 공장",
+        "location": "경상북도 포항시 북구 죽도동 120-3",
+        "reference_value": 921700000,
+        "minimum_price": 368700000,
+        "price_ratio": 0.4,
+        "details": {
+          "property_type": "공장",
+          "land_area_m2": 1597.23,
+          "building_area_m2": 684.51,
+          "exclusive_area_m2": null,
+          "land_category": "잡종지",
+          "ownership_type": "지분",
+          "share_rate": 0.25,
+          "occupancy_status": "공실 추정",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-10-19",
+        "bid_start_date": "2026-10-14",
+        "bid_end_date": "2026-10-19",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-24",
+        "expire_date": "2026-10-19"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "공장",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A021",
+      "court": "부산회생법원",
+      "case_number": "2026하합1021",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 다온물산",
+      "trustee": {
+        "name": "이서윤",
+        "phone": "051-0000-1021",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee021@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "토지",
+        "title": "부산광역시 사상구 괘법동 121-4 소재 토지",
+        "location": "부산광역시 사상구 괘법동 121-4",
+        "reference_value": 414700000,
+        "minimum_price": 290300000,
+        "price_ratio": 0.7,
+        "details": {
+          "property_type": "토지",
+          "land_area_m2": 838.55,
+          "building_area_m2": null,
+          "exclusive_area_m2": null,
+          "land_category": "전",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "제3자 점유",
+          "farmland_certificate": true
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-10-22",
+        "bid_start_date": "2026-10-17",
+        "bid_end_date": "2026-10-22",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-26",
+        "expire_date": "2026-10-22"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "토지",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A022",
+      "court": "울산지방법원",
+      "case_number": "2026하단1022",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 누리건설",
+      "trustee": {
+        "name": "박준호",
+        "phone": "052-0000-1022",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee022@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "다가구주택",
+        "title": "울산광역시 남구 삼산동 122-5 소재 다가구주택",
+        "location": "울산광역시 남구 삼산동 122-5",
+        "reference_value": 695400000,
+        "minimum_price": 278200000,
+        "price_ratio": 0.4,
+        "details": {
+          "property_type": "다가구주택",
+          "land_area_m2": 565.26,
+          "building_area_m2": 587.69,
+          "exclusive_area_m2": null,
+          "land_category": "잡종지",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-10-25",
+        "bid_start_date": "2026-10-20",
+        "bid_end_date": "2026-10-25",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-28",
+        "expire_date": "2026-10-25"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "다가구주택",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A023",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1023",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 해솔시스템",
+      "trustee": {
+        "name": "최가은",
+        "phone": "054-0000-1023",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee023@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "오피스텔",
+        "title": "경상북도 포항시 북구 죽도동 123-6 소재 오피스텔",
+        "location": "경상북도 포항시 북구 죽도동 123-6",
+        "reference_value": 230300000,
+        "minimum_price": 147400000,
+        "price_ratio": 0.64,
+        "details": {
+          "property_type": "오피스텔",
+          "land_area_m2": 989.31,
+          "building_area_m2": 708.51,
+          "exclusive_area_m2": 91.29,
+          "land_category": "전",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "공실 추정",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-10-28",
+        "bid_start_date": "2026-10-23",
+        "bid_end_date": "2026-10-28",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-09-30",
+        "expire_date": "2026-10-28"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "오피스텔",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A024",
+      "court": "부산회생법원",
+      "case_number": "2025하합1024",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 미래인베스트",
+      "trustee": {
+        "name": "정현우",
+        "phone": "051-0000-1024",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee024@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "아파트",
+        "title": "부산광역시 사상구 괘법동 124-7 소재 아파트",
+        "location": "부산광역시 사상구 괘법동 124-7",
+        "reference_value": 670400000,
+        "minimum_price": 234600000,
+        "price_ratio": 0.35,
+        "details": {
+          "property_type": "아파트",
+          "land_area_m2": 1675.21,
+          "building_area_m2": 795.09,
+          "exclusive_area_m2": 128.96,
+          "land_category": "대",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "제3자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-10-31",
+        "bid_start_date": "2026-10-26",
+        "bid_end_date": "2026-10-31",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-02",
+        "expire_date": "2026-10-31"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "아파트",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A025",
+      "court": "울산지방법원",
+      "case_number": "2026하단1025",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 한빛산업",
+      "trustee": {
+        "name": "한지민",
+        "phone": "052-0000-1025",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee025@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "단독주택",
+        "title": "울산광역시 남구 삼산동 125-8 소재 단독주택",
+        "location": "울산광역시 남구 삼산동 125-8",
+        "reference_value": 343800000,
+        "minimum_price": 120300000,
+        "price_ratio": 0.35,
+        "details": {
+          "property_type": "단독주택",
+          "land_area_m2": 1585.3,
+          "building_area_m2": 854.11,
+          "exclusive_area_m2": null,
+          "land_category": "전",
+          "ownership_type": "지분",
+          "share_rate": 0.125,
+          "occupancy_status": "현황 미확인",
+          "farmland_certificate": true
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-11-03",
+        "bid_start_date": "2026-10-29",
+        "bid_end_date": "2026-11-03",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-04",
+        "expire_date": "2026-11-03"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "단독주택",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A026",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1026",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 새롬물산",
+      "trustee": {
+        "name": "윤도현",
+        "phone": "054-0000-1026",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee026@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "상가",
+        "title": "경상북도 포항시 북구 죽도동 126-9 소재 상가",
+        "location": "경상북도 포항시 북구 죽도동 126-9",
+        "reference_value": 1026900000,
+        "minimum_price": 503200000,
+        "price_ratio": 0.49,
+        "details": {
+          "property_type": "상가",
+          "land_area_m2": 1201.16,
+          "building_area_m2": 854.02,
+          "exclusive_area_m2": null,
+          "land_category": "전",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-11-06",
+        "bid_start_date": "2026-11-01",
+        "bid_end_date": "2026-11-06",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-06",
+        "expire_date": "2026-11-06"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "상가",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A027",
+      "court": "부산회생법원",
+      "case_number": "2026하합1027",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 온누리건설",
+      "trustee": {
+        "name": "오수빈",
+        "phone": "051-0000-1027",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee027@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "창고",
+        "title": "부산광역시 사상구 괘법동 127-1 소재 창고",
+        "location": "부산광역시 사상구 괘법동 127-1",
+        "reference_value": 721600000,
+        "minimum_price": 505100000,
+        "price_ratio": 0.7,
+        "details": {
+          "property_type": "창고",
+          "land_area_m2": 1674.89,
+          "building_area_m2": 688.3,
+          "exclusive_area_m2": null,
+          "land_category": "전",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-11-09",
+        "bid_start_date": "2026-11-04",
+        "bid_end_date": "2026-11-09",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-10-08",
+        "expire_date": "2026-11-09"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "창고",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A028",
+      "court": "울산지방법원",
+      "case_number": "2025하단1028",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 세움시스템",
+      "trustee": {
+        "name": "임태훈",
+        "phone": "052-0000-1028",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee028@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "공장",
+        "title": "울산광역시 남구 삼산동 128-2 소재 공장",
+        "location": "울산광역시 남구 삼산동 128-2",
+        "reference_value": 553000000,
+        "minimum_price": 353900000,
+        "price_ratio": 0.64,
+        "details": {
+          "property_type": "공장",
+          "land_area_m2": 1623.32,
+          "building_area_m2": 425.54,
+          "exclusive_area_m2": null,
+          "land_category": "임야",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-11-12",
+        "bid_start_date": "2026-11-07",
+        "bid_end_date": "2026-11-12",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-10",
+        "expire_date": "2026-11-12"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "공장",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A029",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1029",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 이룸인베스트",
+      "trustee": {
+        "name": "서지연",
+        "phone": "054-0000-1029",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee029@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "토지",
+        "title": "경상북도 포항시 북구 죽도동 129-3 소재 토지",
+        "location": "경상북도 포항시 북구 죽도동 129-3",
+        "reference_value": 324500000,
+        "minimum_price": 129800000,
+        "price_ratio": 0.4,
+        "details": {
+          "property_type": "토지",
+          "land_area_m2": 77.02,
+          "building_area_m2": null,
+          "exclusive_area_m2": null,
+          "land_category": "답",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": true
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-11-15",
+        "bid_start_date": "2026-11-10",
+        "bid_end_date": "2026-11-15",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-12",
+        "expire_date": "2026-11-15"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "토지",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A030",
+      "court": "부산회생법원",
+      "case_number": "2026하합1030",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 바른산업",
+      "trustee": {
+        "name": "조성우",
+        "phone": "051-0000-1030",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee030@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "다가구주택",
+        "title": "부산광역시 사상구 괘법동 130-4 소재 다가구주택",
+        "location": "부산광역시 사상구 괘법동 130-4",
+        "reference_value": 39400000,
+        "minimum_price": 15800000,
+        "price_ratio": 0.401,
+        "details": {
+          "property_type": "다가구주택",
+          "land_area_m2": 1150.74,
+          "building_area_m2": 233.03,
+          "exclusive_area_m2": null,
+          "land_category": "잡종지",
+          "ownership_type": "지분",
+          "share_rate": 0.125,
+          "occupancy_status": "제3자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-11-18",
+        "bid_start_date": "2026-11-13",
+        "bid_end_date": "2026-11-18",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-29",
+        "expire_date": "2026-11-18"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "다가구주택",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A031",
+      "court": "울산지방법원",
+      "case_number": "2026하단1031",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 푸른물산",
+      "trustee": {
+        "name": "문예린",
+        "phone": "052-0000-1031",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee031@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "오피스텔",
+        "title": "울산광역시 남구 삼산동 131-5 소재 오피스텔",
+        "location": "울산광역시 남구 삼산동 131-5",
+        "reference_value": 122900000,
+        "minimum_price": 61400000,
+        "price_ratio": 0.5,
+        "details": {
+          "property_type": "오피스텔",
+          "land_area_m2": 1217.4,
+          "building_area_m2": 220.31,
+          "exclusive_area_m2": 41.54,
+          "land_category": "답",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "현황 미확인",
+          "farmland_certificate": true
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-11-21",
+        "bid_start_date": "2026-11-16",
+        "bid_end_date": "2026-11-21",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-10-31",
+        "expire_date": "2026-11-21"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "오피스텔",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A032",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2025하단1032",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 한결건설",
+      "trustee": {
+        "name": "강우진",
+        "phone": "054-0000-1032",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee032@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "아파트",
+        "title": "경상북도 포항시 북구 죽도동 132-6 소재 아파트",
+        "location": "경상북도 포항시 북구 죽도동 132-6",
+        "reference_value": 1058400000,
+        "minimum_price": 846700000,
+        "price_ratio": 0.8,
+        "details": {
+          "property_type": "아파트",
+          "land_area_m2": 375.12,
+          "building_area_m2": 118.85,
+          "exclusive_area_m2": 78.88,
+          "land_category": "임야",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "현황 미확인",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-11-24",
+        "bid_start_date": "2026-11-19",
+        "bid_end_date": "2026-11-24",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-11-02",
+        "expire_date": "2026-11-24"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "아파트",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A033",
+      "court": "부산회생법원",
+      "case_number": "2026하합1033",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 라온시스템",
+      "trustee": {
+        "name": "신하늘",
+        "phone": "051-0000-1033",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee033@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "단독주택",
+        "title": "부산광역시 사상구 괘법동 133-7 소재 단독주택",
+        "location": "부산광역시 사상구 괘법동 133-7",
+        "reference_value": 568800000,
+        "minimum_price": 455000000,
+        "price_ratio": 0.8,
+        "details": {
+          "property_type": "단독주택",
+          "land_area_m2": 135.34,
+          "building_area_m2": 600.24,
+          "exclusive_area_m2": null,
+          "land_category": "잡종지",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "공실 추정",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-11-27",
+        "bid_start_date": "2026-11-22",
+        "bid_end_date": "2026-11-27",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-11-04",
+        "expire_date": "2026-11-27"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "단독주택",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A034",
+      "court": "울산지방법원",
+      "case_number": "2026하단1034",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 마루인베스트",
+      "trustee": {
+        "name": "백지훈",
+        "phone": "052-0000-1034",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee034@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "상가",
+        "title": "울산광역시 남구 삼산동 134-8 소재 상가",
+        "location": "울산광역시 남구 삼산동 134-8",
+        "reference_value": 109400000,
+        "minimum_price": 76600000,
+        "price_ratio": 0.7,
+        "details": {
+          "property_type": "상가",
+          "land_area_m2": 637.17,
+          "building_area_m2": 780.35,
+          "exclusive_area_m2": null,
+          "land_category": "잡종지",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-08-22",
+        "bid_start_date": "2026-08-17",
+        "bid_end_date": "2026-08-22",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-07-29",
+        "expire_date": "2026-08-22"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "상가",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A035",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1035",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 늘봄산업",
+      "trustee": {
+        "name": "배유나",
+        "phone": "054-0000-1035",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee035@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "창고",
+        "title": "경상북도 포항시 북구 죽도동 135-9 소재 창고",
+        "location": "경상북도 포항시 북구 죽도동 135-9",
+        "reference_value": 281100000,
+        "minimum_price": 140600000,
+        "price_ratio": 0.5,
+        "details": {
+          "property_type": "창고",
+          "land_area_m2": 829.56,
+          "building_area_m2": 399.93,
+          "exclusive_area_m2": null,
+          "land_category": "공장용지",
+          "ownership_type": "지분",
+          "share_rate": 0.25,
+          "occupancy_status": "현황 미확인",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-08-25",
+        "bid_start_date": "2026-08-20",
+        "bid_end_date": "2026-08-25",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-07-31",
+        "expire_date": "2026-08-25"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "창고",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A036",
+      "court": "부산회생법원",
+      "case_number": "2025하합1036",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 아람물산",
+      "trustee": {
+        "name": "노준혁",
+        "phone": "051-0000-1036",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee036@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "공장",
+        "title": "부산광역시 사상구 괘법동 136-1 소재 공장",
+        "location": "부산광역시 사상구 괘법동 136-1",
+        "reference_value": 357400000,
+        "minimum_price": 143000000,
+        "price_ratio": 0.4,
+        "details": {
+          "property_type": "공장",
+          "land_area_m2": 1462.12,
+          "building_area_m2": 775.41,
+          "exclusive_area_m2": null,
+          "land_category": "임야",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "공실 추정",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-08-28",
+        "bid_start_date": "2026-08-23",
+        "bid_end_date": "2026-08-28",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-02",
+        "expire_date": "2026-08-28"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "공장",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A037",
+      "court": "울산지방법원",
+      "case_number": "2026하단1037",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 다솜건설",
+      "trustee": {
+        "name": "류소연",
+        "phone": "052-0000-1037",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee037@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "토지",
+        "title": "울산광역시 남구 삼산동 137-2 소재 토지",
+        "location": "울산광역시 남구 삼산동 137-2",
+        "reference_value": 96300000,
+        "minimum_price": 33700000,
+        "price_ratio": 0.35,
+        "details": {
+          "property_type": "토지",
+          "land_area_m2": 1670.41,
+          "building_area_m2": null,
+          "exclusive_area_m2": null,
+          "land_category": "대",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-08-31",
+        "bid_start_date": "2026-08-26",
+        "bid_end_date": "2026-08-31",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-04",
+        "expire_date": "2026-08-31"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "토지",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A038",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1038",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 채움시스템",
+      "trustee": {
+        "name": "장태민",
+        "phone": "054-0000-1038",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee038@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "다가구주택",
+        "title": "경상북도 포항시 북구 죽도동 138-3 소재 다가구주택",
+        "location": "경상북도 포항시 북구 죽도동 138-3",
+        "reference_value": 248000000,
+        "minimum_price": 173600000,
+        "price_ratio": 0.7,
+        "details": {
+          "property_type": "다가구주택",
+          "land_area_m2": 887.19,
+          "building_area_m2": 782.92,
+          "exclusive_area_m2": null,
+          "land_category": "임야",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "공실 추정",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-09-03",
+        "bid_start_date": "2026-08-29",
+        "bid_end_date": "2026-09-03",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-06",
+        "expire_date": "2026-09-03"
+      },
+      "tags": [
+        "경상북도",
+        "부동산",
+        "다가구주택",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A039",
+      "court": "부산회생법원",
+      "case_number": "2026하합1039",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 에이스인베스트",
+      "trustee": {
+        "name": "고은채",
+        "phone": "051-0000-1039",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee039@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "오피스텔",
+        "title": "부산광역시 사상구 괘법동 139-4 소재 오피스텔",
+        "location": "부산광역시 사상구 괘법동 139-4",
+        "reference_value": 245800000,
+        "minimum_price": 172100000,
+        "price_ratio": 0.7,
+        "details": {
+          "property_type": "오피스텔",
+          "land_area_m2": 1774.14,
+          "building_area_m2": 264.4,
+          "exclusive_area_m2": 123.01,
+          "land_category": "대",
+          "ownership_type": "전체",
+          "share_rate": 1.0,
+          "occupancy_status": "현황 미확인",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-09-06",
+        "bid_start_date": "2026-09-01",
+        "bid_end_date": "2026-09-06",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-08-08",
+        "expire_date": "2026-09-06"
+      },
+      "tags": [
+        "부산광역시",
+        "부동산",
+        "오피스텔",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A040",
+      "court": "울산지방법원",
+      "case_number": "2025하단1040",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 가온산업",
+      "trustee": {
+        "name": "김민수",
+        "phone": "052-0000-1040",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee040@example.invalid"
+      },
+      "asset": {
+        "category": "부동산",
+        "subcategory": "아파트",
+        "title": "울산광역시 남구 삼산동 140-5 소재 아파트",
+        "location": "울산광역시 남구 삼산동 140-5",
+        "reference_value": 403900000,
+        "minimum_price": 282700000,
+        "price_ratio": 0.7,
+        "details": {
+          "property_type": "아파트",
+          "land_area_m2": 1724.88,
+          "building_area_m2": 896.04,
+          "exclusive_area_m2": 94.47,
+          "land_category": "잡종지",
+          "ownership_type": "지분",
+          "share_rate": 0.333,
+          "occupancy_status": "채무자 점유",
+          "farmland_certificate": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-09-09",
+        "bid_start_date": "2026-09-04",
+        "bid_end_date": "2026-09-09",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-10",
+        "expire_date": "2026-09-09"
+      },
+      "tags": [
+        "울산광역시",
+        "부동산",
+        "아파트",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A041",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1041",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 다온물산",
+      "trustee": {
+        "name": "이서윤",
+        "phone": "054-0000-1041",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee041@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "손해배상채권",
+        "title": "손해배상채권 매각",
+        "location": "경상북도 포항시 북구 죽도동 141-6",
+        "reference_value": 582500000,
+        "minimum_price": 29100000,
+        "price_ratio": 0.05,
+        "details": {
+          "claim_type": "손해배상채권",
+          "principal_amount": 517800000,
+          "interest_amount": 64700000,
+          "claim_amount": 582500000,
+          "security_exists": false,
+          "judgment_exists": false,
+          "guarantor_exists": false,
+          "recovery_status": "일부 회수",
+          "limitation_notes": "시효중단 여부 확인 필요"
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-09-12",
+        "bid_start_date": "2026-09-07",
+        "bid_end_date": "2026-09-12",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-12",
+        "expire_date": "2026-09-12"
+      },
+      "tags": [
+        "경상북도",
+        "채권",
+        "손해배상채권",
+        "저가매각"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A042",
+      "court": "부산회생법원",
+      "case_number": "2026하합1042",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 누리건설",
+      "trustee": {
+        "name": "박준호",
+        "phone": "051-0000-1042",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee042@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "대여금채권",
+        "title": "대여금채권 매각",
+        "location": "부산광역시 사상구 괘법동 142-7",
+        "reference_value": 177600000,
+        "minimum_price": 26600000,
+        "price_ratio": 0.15,
+        "details": {
+          "claim_type": "대여금채권",
+          "principal_amount": 169800000,
+          "interest_amount": 7800000,
+          "claim_amount": 177600000,
+          "security_exists": false,
+          "judgment_exists": true,
+          "guarantor_exists": false,
+          "recovery_status": "미회수",
+          "limitation_notes": "소멸시효 확인 필요"
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-09-15",
+        "bid_start_date": "2026-09-10",
+        "bid_end_date": "2026-09-15",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-14",
+        "expire_date": "2026-09-15"
+      },
+      "tags": [
+        "부산광역시",
+        "채권",
+        "대여금채권",
+        "일반"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A043",
+      "court": "울산지방법원",
+      "case_number": "2026하단1043",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 해솔시스템",
+      "trustee": {
+        "name": "최가은",
+        "phone": "052-0000-1043",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee043@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "구상금채권",
+        "title": "구상금채권 매각",
+        "location": "울산광역시 남구 삼산동 143-8",
+        "reference_value": 1426400000,
+        "minimum_price": 114100000,
+        "price_ratio": 0.08,
+        "details": {
+          "claim_type": "구상금채권",
+          "principal_amount": 1351200000,
+          "interest_amount": 75200000,
+          "claim_amount": 1426400000,
+          "security_exists": false,
+          "judgment_exists": false,
+          "guarantor_exists": false,
+          "recovery_status": "일부 회수",
+          "limitation_notes": "소멸시효 확인 필요"
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-09-18",
+        "bid_start_date": "2026-09-13",
+        "bid_end_date": "2026-09-18",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-08-16",
+        "expire_date": "2026-09-18"
+      },
+      "tags": [
+        "울산광역시",
+        "채권",
+        "구상금채권",
+        "저가매각"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A044",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2025하단1044",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 미래인베스트",
+      "trustee": {
+        "name": "정현우",
+        "phone": "054-0000-1044",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee044@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "손해배상채권",
+        "title": "손해배상채권 매각",
+        "location": "경상북도 포항시 북구 죽도동 144-9",
+        "reference_value": 2337400000,
+        "minimum_price": 350600000,
+        "price_ratio": 0.15,
+        "details": {
+          "claim_type": "손해배상채권",
+          "principal_amount": 1790000000,
+          "interest_amount": 547400000,
+          "claim_amount": 2337400000,
+          "security_exists": true,
+          "judgment_exists": false,
+          "guarantor_exists": false,
+          "recovery_status": "일부 회수",
+          "limitation_notes": "집행권원 존재"
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-09-21",
+        "bid_start_date": "2026-09-16",
+        "bid_end_date": "2026-09-21",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-18",
+        "expire_date": "2026-09-21"
+      },
+      "tags": [
+        "경상북도",
+        "채권",
+        "손해배상채권",
+        "일반"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A045",
+      "court": "부산회생법원",
+      "case_number": "2026하합1045",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 한빛산업",
+      "trustee": {
+        "name": "한지민",
+        "phone": "051-0000-1045",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee045@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "대여금채권",
+        "title": "대여금채권 매각",
+        "location": "부산광역시 사상구 괘법동 145-1",
+        "reference_value": 1876300000,
+        "minimum_price": 375300000,
+        "price_ratio": 0.2,
+        "details": {
+          "claim_type": "대여금채권",
+          "principal_amount": 1537600000,
+          "interest_amount": 338700000,
+          "claim_amount": 1876300000,
+          "security_exists": false,
+          "judgment_exists": true,
+          "guarantor_exists": true,
+          "recovery_status": "일부 회수",
+          "limitation_notes": "특이사항 없음"
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-09-24",
+        "bid_start_date": "2026-09-19",
+        "bid_end_date": "2026-09-24",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-04",
+        "expire_date": "2026-09-24"
+      },
+      "tags": [
+        "부산광역시",
+        "채권",
+        "대여금채권",
+        "일반"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A046",
+      "court": "울산지방법원",
+      "case_number": "2026하단1046",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 새롬물산",
+      "trustee": {
+        "name": "윤도현",
+        "phone": "052-0000-1046",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee046@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "구상금채권",
+        "title": "구상금채권 매각",
+        "location": "울산광역시 남구 삼산동 146-2",
+        "reference_value": 2121200000,
+        "minimum_price": 424200000,
+        "price_ratio": 0.2,
+        "details": {
+          "claim_type": "구상금채권",
+          "principal_amount": 1743300000,
+          "interest_amount": 377900000,
+          "claim_amount": 2121200000,
+          "security_exists": false,
+          "judgment_exists": false,
+          "guarantor_exists": false,
+          "recovery_status": "추심 중",
+          "limitation_notes": "시효중단 여부 확인 필요"
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-09-27",
+        "bid_start_date": "2026-09-22",
+        "bid_end_date": "2026-09-27",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-06",
+        "expire_date": "2026-09-27"
+      },
+      "tags": [
+        "울산광역시",
+        "채권",
+        "구상금채권",
+        "일반"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A047",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1047",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 온누리건설",
+      "trustee": {
+        "name": "오수빈",
+        "phone": "054-0000-1047",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee047@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "손해배상채권",
+        "title": "손해배상채권 매각",
+        "location": "경상북도 포항시 북구 죽도동 147-3",
+        "reference_value": 691100000,
+        "minimum_price": 69100000,
+        "price_ratio": 0.1,
+        "details": {
+          "claim_type": "손해배상채권",
+          "principal_amount": 555400000,
+          "interest_amount": 135700000,
+          "claim_amount": 691100000,
+          "security_exists": false,
+          "judgment_exists": false,
+          "guarantor_exists": false,
+          "recovery_status": "미회수",
+          "limitation_notes": "시효중단 여부 확인 필요"
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-09-30",
+        "bid_start_date": "2026-09-25",
+        "bid_end_date": "2026-09-30",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-09-08",
+        "expire_date": "2026-09-30"
+      },
+      "tags": [
+        "경상북도",
+        "채권",
+        "손해배상채권",
+        "저가매각"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A048",
+      "court": "부산회생법원",
+      "case_number": "2025하합1048",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 세움시스템",
+      "trustee": {
+        "name": "임태훈",
+        "phone": "051-0000-1048",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee048@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "대여금채권",
+        "title": "대여금채권 매각",
+        "location": "부산광역시 사상구 괘법동 148-4",
+        "reference_value": 1133500000,
+        "minimum_price": 340000000,
+        "price_ratio": 0.3,
+        "details": {
+          "claim_type": "대여금채권",
+          "principal_amount": 1057500000,
+          "interest_amount": 76000000,
+          "claim_amount": 1133500000,
+          "security_exists": true,
+          "judgment_exists": true,
+          "guarantor_exists": false,
+          "recovery_status": "추심 중",
+          "limitation_notes": "특이사항 없음"
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-10-03",
+        "bid_start_date": "2026-09-28",
+        "bid_end_date": "2026-10-03",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-10",
+        "expire_date": "2026-10-03"
+      },
+      "tags": [
+        "부산광역시",
+        "채권",
+        "대여금채권",
+        "일반"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A049",
+      "court": "울산지방법원",
+      "case_number": "2026하단1049",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 이룸인베스트",
+      "trustee": {
+        "name": "서지연",
+        "phone": "052-0000-1049",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee049@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "구상금채권",
+        "title": "구상금채권 매각",
+        "location": "울산광역시 남구 삼산동 149-5",
+        "reference_value": 1126600000,
+        "minimum_price": 56300000,
+        "price_ratio": 0.05,
+        "details": {
+          "claim_type": "구상금채권",
+          "principal_amount": 848800000,
+          "interest_amount": 277800000,
+          "claim_amount": 1126600000,
+          "security_exists": false,
+          "judgment_exists": false,
+          "guarantor_exists": false,
+          "recovery_status": "일부 회수",
+          "limitation_notes": "특이사항 없음"
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-10-06",
+        "bid_start_date": "2026-10-01",
+        "bid_end_date": "2026-10-06",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-12",
+        "expire_date": "2026-10-06"
+      },
+      "tags": [
+        "울산광역시",
+        "채권",
+        "구상금채권",
+        "저가매각"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A050",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1050",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 바른산업",
+      "trustee": {
+        "name": "조성우",
+        "phone": "054-0000-1050",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee050@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "손해배상채권",
+        "title": "손해배상채권 매각",
+        "location": "경상북도 포항시 북구 죽도동 150-6",
+        "reference_value": 2224400000,
+        "minimum_price": 111200000,
+        "price_ratio": 0.05,
+        "details": {
+          "claim_type": "손해배상채권",
+          "principal_amount": 1648300000,
+          "interest_amount": 576100000,
+          "claim_amount": 2224400000,
+          "security_exists": false,
+          "judgment_exists": false,
+          "guarantor_exists": true,
+          "recovery_status": "일부 회수",
+          "limitation_notes": "집행권원 존재"
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-10-09",
+        "bid_start_date": "2026-10-04",
+        "bid_end_date": "2026-10-09",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-14",
+        "expire_date": "2026-10-09"
+      },
+      "tags": [
+        "경상북도",
+        "채권",
+        "손해배상채권",
+        "저가매각"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A051",
+      "court": "부산회생법원",
+      "case_number": "2026하합1051",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 푸른물산",
+      "trustee": {
+        "name": "문예린",
+        "phone": "051-0000-1051",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee051@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "대여금채권",
+        "title": "대여금채권 매각",
+        "location": "부산광역시 사상구 괘법동 151-7",
+        "reference_value": 1500700000,
+        "minimum_price": 150100000,
+        "price_ratio": 0.1,
+        "details": {
+          "claim_type": "대여금채권",
+          "principal_amount": 1346100000,
+          "interest_amount": 154600000,
+          "claim_amount": 1500700000,
+          "security_exists": false,
+          "judgment_exists": true,
+          "guarantor_exists": false,
+          "recovery_status": "일부 회수",
+          "limitation_notes": "집행권원 존재"
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-10-12",
+        "bid_start_date": "2026-10-07",
+        "bid_end_date": "2026-10-12",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-09-16",
+        "expire_date": "2026-10-12"
+      },
+      "tags": [
+        "부산광역시",
+        "채권",
+        "대여금채권",
+        "저가매각"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A052",
+      "court": "울산지방법원",
+      "case_number": "2025하단1052",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 한결건설",
+      "trustee": {
+        "name": "강우진",
+        "phone": "052-0000-1052",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee052@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "구상금채권",
+        "title": "구상금채권 매각",
+        "location": "울산광역시 남구 삼산동 152-8",
+        "reference_value": 1108500000,
+        "minimum_price": 166300000,
+        "price_ratio": 0.15,
+        "details": {
+          "claim_type": "구상금채권",
+          "principal_amount": 988700000,
+          "interest_amount": 119800000,
+          "claim_amount": 1108500000,
+          "security_exists": true,
+          "judgment_exists": false,
+          "guarantor_exists": false,
+          "recovery_status": "추심 중",
+          "limitation_notes": "소멸시효 확인 필요"
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-10-15",
+        "bid_start_date": "2026-10-10",
+        "bid_end_date": "2026-10-15",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-18",
+        "expire_date": "2026-10-15"
+      },
+      "tags": [
+        "울산광역시",
+        "채권",
+        "구상금채권",
+        "일반"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A053",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1053",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 라온시스템",
+      "trustee": {
+        "name": "신하늘",
+        "phone": "054-0000-1053",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee053@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "손해배상채권",
+        "title": "손해배상채권 매각",
+        "location": "경상북도 포항시 북구 죽도동 153-9",
+        "reference_value": 2286900000,
+        "minimum_price": 228700000,
+        "price_ratio": 0.1,
+        "details": {
+          "claim_type": "손해배상채권",
+          "principal_amount": 1770800000,
+          "interest_amount": 516100000,
+          "claim_amount": 2286900000,
+          "security_exists": false,
+          "judgment_exists": false,
+          "guarantor_exists": false,
+          "recovery_status": "일부 회수",
+          "limitation_notes": "집행권원 존재"
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-10-18",
+        "bid_start_date": "2026-10-13",
+        "bid_end_date": "2026-10-18",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-20",
+        "expire_date": "2026-10-18"
+      },
+      "tags": [
+        "경상북도",
+        "채권",
+        "손해배상채권",
+        "저가매각"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A054",
+      "court": "부산회생법원",
+      "case_number": "2026하합1054",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 마루인베스트",
+      "trustee": {
+        "name": "백지훈",
+        "phone": "051-0000-1054",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee054@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "대여금채권",
+        "title": "대여금채권 매각",
+        "location": "부산광역시 사상구 괘법동 154-1",
+        "reference_value": 761000000,
+        "minimum_price": 38000000,
+        "price_ratio": 0.05,
+        "details": {
+          "claim_type": "대여금채권",
+          "principal_amount": 713300000,
+          "interest_amount": 47700000,
+          "claim_amount": 761000000,
+          "security_exists": false,
+          "judgment_exists": true,
+          "guarantor_exists": false,
+          "recovery_status": "미회수",
+          "limitation_notes": "시효중단 여부 확인 필요"
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-10-21",
+        "bid_start_date": "2026-10-16",
+        "bid_end_date": "2026-10-21",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-22",
+        "expire_date": "2026-10-21"
+      },
+      "tags": [
+        "부산광역시",
+        "채권",
+        "대여금채권",
+        "저가매각"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A055",
+      "court": "울산지방법원",
+      "case_number": "2026하단1055",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 늘봄산업",
+      "trustee": {
+        "name": "배유나",
+        "phone": "052-0000-1055",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee055@example.invalid"
+      },
+      "asset": {
+        "category": "채권",
+        "subcategory": "구상금채권",
+        "title": "구상금채권 매각",
+        "location": "울산광역시 남구 삼산동 155-2",
+        "reference_value": 928200000,
+        "minimum_price": 278500000,
+        "price_ratio": 0.3,
+        "details": {
+          "claim_type": "구상금채권",
+          "principal_amount": 758600000,
+          "interest_amount": 169600000,
+          "claim_amount": 928200000,
+          "security_exists": false,
+          "judgment_exists": false,
+          "guarantor_exists": true,
+          "recovery_status": "추심 중",
+          "limitation_notes": "집행권원 존재"
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-10-24",
+        "bid_start_date": "2026-10-19",
+        "bid_end_date": "2026-10-24",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-09-24",
+        "expire_date": "2026-10-24"
+      },
+      "tags": [
+        "울산광역시",
+        "채권",
+        "구상금채권",
+        "일반"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A056",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2025하단1056",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 아람물산",
+      "trustee": {
+        "name": "노준혁",
+        "phone": "054-0000-1056",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee056@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "특허권",
+        "title": "특허권 '아람 기술/브랜드 자산'",
+        "location": "경상북도 포항시 북구 죽도동 156-3",
+        "reference_value": 230300000,
+        "minimum_price": 69100000,
+        "price_ratio": 0.3,
+        "details": {
+          "ip_type": "특허권",
+          "registration_no": "10-2022-1000056",
+          "application_no": "10-2019-2000056",
+          "ip_name": "아람 물류 관련 기술",
+          "rights_share": 0.5,
+          "expiry_date": "2030-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-10-27",
+        "bid_start_date": "2026-10-22",
+        "bid_end_date": "2026-10-27",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-26",
+        "expire_date": "2026-10-27"
+      },
+      "tags": [
+        "경상북도",
+        "지식재산권",
+        "특허권",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A057",
+      "court": "부산회생법원",
+      "case_number": "2026하합1057",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 다솜건설",
+      "trustee": {
+        "name": "류소연",
+        "phone": "051-0000-1057",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee057@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "상표권",
+        "title": "상표권 '다솜 기술/브랜드 자산'",
+        "location": "부산광역시 사상구 괘법동 157-4",
+        "reference_value": 170600000,
+        "minimum_price": 68200000,
+        "price_ratio": 0.4,
+        "details": {
+          "ip_type": "상표권",
+          "registration_no": "10-2023-1000057",
+          "application_no": "10-2020-2000057",
+          "ip_name": "다솜 AI분석 관련 기술",
+          "rights_share": 1.0,
+          "expiry_date": "2031-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-10-30",
+        "bid_start_date": "2026-10-25",
+        "bid_end_date": "2026-10-30",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-28",
+        "expire_date": "2026-10-30"
+      },
+      "tags": [
+        "부산광역시",
+        "지식재산권",
+        "상표권",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A058",
+      "court": "울산지방법원",
+      "case_number": "2026하단1058",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 채움시스템",
+      "trustee": {
+        "name": "장태민",
+        "phone": "052-0000-1058",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee058@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "디자인권",
+        "title": "디자인권 '채움 기술/브랜드 자산'",
+        "location": "울산광역시 남구 삼산동 158-5",
+        "reference_value": 87300000,
+        "minimum_price": 8700000,
+        "price_ratio": 0.1,
+        "details": {
+          "ip_type": "디자인권",
+          "registration_no": "10-2024-1000058",
+          "application_no": "10-2021-2000058",
+          "ip_name": "채움 친환경소재 관련 기술",
+          "rights_share": 1.0,
+          "expiry_date": "2032-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-11-02",
+        "bid_start_date": "2026-10-28",
+        "bid_end_date": "2026-11-02",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-30",
+        "expire_date": "2026-11-02"
+      },
+      "tags": [
+        "울산광역시",
+        "지식재산권",
+        "디자인권",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A059",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1059",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 에이스인베스트",
+      "trustee": {
+        "name": "고은채",
+        "phone": "054-0000-1059",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee059@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "프로그램저작권",
+        "title": "프로그램저작권 '에이스 기술/브랜드 자산'",
+        "location": "경상북도 포항시 북구 죽도동 159-6",
+        "reference_value": 35200000,
+        "minimum_price": 14100000,
+        "price_ratio": 0.401,
+        "details": {
+          "ip_type": "프로그램저작권",
+          "registration_no": "10-2025-1000059",
+          "application_no": "10-2022-2000059",
+          "ip_name": "에이스 결제 관련 기술",
+          "rights_share": 1.0,
+          "expiry_date": "2033-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-11-05",
+        "bid_start_date": "2026-10-31",
+        "bid_end_date": "2026-11-05",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-10-02",
+        "expire_date": "2026-11-05"
+      },
+      "tags": [
+        "경상북도",
+        "지식재산권",
+        "프로그램저작권",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A060",
+      "court": "부산회생법원",
+      "case_number": "2025하합1060",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 가온산업",
+      "trustee": {
+        "name": "김민수",
+        "phone": "051-0000-1060",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee060@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "특허권",
+        "title": "특허권 '가온 기술/브랜드 자산'",
+        "location": "부산광역시 사상구 괘법동 160-7",
+        "reference_value": 276800000,
+        "minimum_price": 83000000,
+        "price_ratio": 0.3,
+        "details": {
+          "ip_type": "특허권",
+          "registration_no": "10-2020-1000060",
+          "application_no": "10-2023-2000060",
+          "ip_name": "가온 센서 관련 기술",
+          "rights_share": 0.5,
+          "expiry_date": "2034-12-31",
+          "license_exists": true
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-11-08",
+        "bid_start_date": "2026-11-03",
+        "bid_end_date": "2026-11-08",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-19",
+        "expire_date": "2026-11-08"
+      },
+      "tags": [
+        "부산광역시",
+        "지식재산권",
+        "특허권",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A061",
+      "court": "울산지방법원",
+      "case_number": "2026하단1061",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 다온물산",
+      "trustee": {
+        "name": "이서윤",
+        "phone": "052-0000-1061",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee061@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "상표권",
+        "title": "상표권 '다온 기술/브랜드 자산'",
+        "location": "울산광역시 남구 삼산동 161-8",
+        "reference_value": 19400000,
+        "minimum_price": 1900000,
+        "price_ratio": 0.098,
+        "details": {
+          "ip_type": "상표권",
+          "registration_no": "10-2021-1000061",
+          "application_no": "10-2024-2000061",
+          "ip_name": "다온 배터리 관련 기술",
+          "rights_share": 1.0,
+          "expiry_date": "2035-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-11-11",
+        "bid_start_date": "2026-11-06",
+        "bid_end_date": "2026-11-11",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-21",
+        "expire_date": "2026-11-11"
+      },
+      "tags": [
+        "울산광역시",
+        "지식재산권",
+        "상표권",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A062",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1062",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 누리건설",
+      "trustee": {
+        "name": "박준호",
+        "phone": "054-0000-1062",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee062@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "디자인권",
+        "title": "디자인권 '누리 기술/브랜드 자산'",
+        "location": "경상북도 포항시 북구 죽도동 162-9",
+        "reference_value": 114300000,
+        "minimum_price": 22900000,
+        "price_ratio": 0.2,
+        "details": {
+          "ip_type": "디자인권",
+          "registration_no": "10-2022-1000062",
+          "application_no": "10-2025-2000062",
+          "ip_name": "누리 물류 관련 기술",
+          "rights_share": 1.0,
+          "expiry_date": "2036-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-11-14",
+        "bid_start_date": "2026-11-09",
+        "bid_end_date": "2026-11-14",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-23",
+        "expire_date": "2026-11-14"
+      },
+      "tags": [
+        "경상북도",
+        "지식재산권",
+        "디자인권",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A063",
+      "court": "부산회생법원",
+      "case_number": "2026하합1063",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 해솔시스템",
+      "trustee": {
+        "name": "최가은",
+        "phone": "051-0000-1063",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee063@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "프로그램저작권",
+        "title": "프로그램저작권 '해솔 기술/브랜드 자산'",
+        "location": "부산광역시 사상구 괘법동 163-1",
+        "reference_value": 213800000,
+        "minimum_price": 64100000,
+        "price_ratio": 0.3,
+        "details": {
+          "ip_type": "프로그램저작권",
+          "registration_no": "10-2023-1000063",
+          "application_no": "10-2019-2000063",
+          "ip_name": "해솔 AI분석 관련 기술",
+          "rights_share": 1.0,
+          "expiry_date": "2037-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-11-17",
+        "bid_start_date": "2026-11-12",
+        "bid_end_date": "2026-11-17",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-10-25",
+        "expire_date": "2026-11-17"
+      },
+      "tags": [
+        "부산광역시",
+        "지식재산권",
+        "프로그램저작권",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A064",
+      "court": "울산지방법원",
+      "case_number": "2025하단1064",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 미래인베스트",
+      "trustee": {
+        "name": "정현우",
+        "phone": "052-0000-1064",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee064@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "특허권",
+        "title": "특허권 '미래 기술/브랜드 자산'",
+        "location": "울산광역시 남구 삼산동 164-2",
+        "reference_value": 57900000,
+        "minimum_price": 23200000,
+        "price_ratio": 0.401,
+        "details": {
+          "ip_type": "특허권",
+          "registration_no": "10-2024-1000064",
+          "application_no": "10-2020-2000064",
+          "ip_name": "미래 친환경소재 관련 기술",
+          "rights_share": 0.5,
+          "expiry_date": "2030-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-11-20",
+        "bid_start_date": "2026-11-15",
+        "bid_end_date": "2026-11-20",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-27",
+        "expire_date": "2026-11-20"
+      },
+      "tags": [
+        "울산광역시",
+        "지식재산권",
+        "특허권",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A065",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1065",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 한빛산업",
+      "trustee": {
+        "name": "한지민",
+        "phone": "054-0000-1065",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee065@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "상표권",
+        "title": "상표권 '한빛 기술/브랜드 자산'",
+        "location": "경상북도 포항시 북구 죽도동 165-3",
+        "reference_value": 185800000,
+        "minimum_price": 74300000,
+        "price_ratio": 0.4,
+        "details": {
+          "ip_type": "상표권",
+          "registration_no": "10-2025-1000065",
+          "application_no": "10-2021-2000065",
+          "ip_name": "한빛 결제 관련 기술",
+          "rights_share": 1.0,
+          "expiry_date": "2031-12-31",
+          "license_exists": true
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-11-23",
+        "bid_start_date": "2026-11-18",
+        "bid_end_date": "2026-11-23",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-29",
+        "expire_date": "2026-11-23"
+      },
+      "tags": [
+        "경상북도",
+        "지식재산권",
+        "상표권",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A066",
+      "court": "부산회생법원",
+      "case_number": "2026하합1066",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 새롬물산",
+      "trustee": {
+        "name": "윤도현",
+        "phone": "051-0000-1066",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee066@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "디자인권",
+        "title": "디자인권 '새롬 기술/브랜드 자산'",
+        "location": "부산광역시 사상구 괘법동 166-4",
+        "reference_value": 188800000,
+        "minimum_price": 18900000,
+        "price_ratio": 0.1,
+        "details": {
+          "ip_type": "디자인권",
+          "registration_no": "10-2020-1000066",
+          "application_no": "10-2022-2000066",
+          "ip_name": "새롬 센서 관련 기술",
+          "rights_share": 1.0,
+          "expiry_date": "2032-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-11-26",
+        "bid_start_date": "2026-11-21",
+        "bid_end_date": "2026-11-26",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-31",
+        "expire_date": "2026-11-26"
+      },
+      "tags": [
+        "부산광역시",
+        "지식재산권",
+        "디자인권",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A067",
+      "court": "울산지방법원",
+      "case_number": "2026하단1067",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 온누리건설",
+      "trustee": {
+        "name": "오수빈",
+        "phone": "052-0000-1067",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee067@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "프로그램저작권",
+        "title": "프로그램저작권 '온누리 기술/브랜드 자산'",
+        "location": "울산광역시 남구 삼산동 167-5",
+        "reference_value": 41600000,
+        "minimum_price": 4200000,
+        "price_ratio": 0.101,
+        "details": {
+          "ip_type": "프로그램저작권",
+          "registration_no": "10-2021-1000067",
+          "application_no": "10-2023-2000067",
+          "ip_name": "온누리 배터리 관련 기술",
+          "rights_share": 1.0,
+          "expiry_date": "2033-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-08-21",
+        "bid_start_date": "2026-08-16",
+        "bid_end_date": "2026-08-21",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-07-25",
+        "expire_date": "2026-08-21"
+      },
+      "tags": [
+        "울산광역시",
+        "지식재산권",
+        "프로그램저작권",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A068",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2025하단1068",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 세움시스템",
+      "trustee": {
+        "name": "임태훈",
+        "phone": "054-0000-1068",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee068@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "특허권",
+        "title": "특허권 '세움 기술/브랜드 자산'",
+        "location": "경상북도 포항시 북구 죽도동 168-6",
+        "reference_value": 294400000,
+        "minimum_price": 58900000,
+        "price_ratio": 0.2,
+        "details": {
+          "ip_type": "특허권",
+          "registration_no": "10-2022-1000068",
+          "application_no": "10-2024-2000068",
+          "ip_name": "세움 물류 관련 기술",
+          "rights_share": 0.5,
+          "expiry_date": "2034-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-08-24",
+        "bid_start_date": "2026-08-19",
+        "bid_end_date": "2026-08-24",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-07-27",
+        "expire_date": "2026-08-24"
+      },
+      "tags": [
+        "경상북도",
+        "지식재산권",
+        "특허권",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A069",
+      "court": "부산회생법원",
+      "case_number": "2026하합1069",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 이룸인베스트",
+      "trustee": {
+        "name": "서지연",
+        "phone": "051-0000-1069",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee069@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "상표권",
+        "title": "상표권 '이룸 기술/브랜드 자산'",
+        "location": "부산광역시 사상구 괘법동 169-7",
+        "reference_value": 183800000,
+        "minimum_price": 18400000,
+        "price_ratio": 0.1,
+        "details": {
+          "ip_type": "상표권",
+          "registration_no": "10-2023-1000069",
+          "application_no": "10-2025-2000069",
+          "ip_name": "이룸 AI분석 관련 기술",
+          "rights_share": 1.0,
+          "expiry_date": "2035-12-31",
+          "license_exists": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-08-27",
+        "bid_start_date": "2026-08-22",
+        "bid_end_date": "2026-08-27",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-07-29",
+        "expire_date": "2026-08-27"
+      },
+      "tags": [
+        "부산광역시",
+        "지식재산권",
+        "상표권",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A070",
+      "court": "울산지방법원",
+      "case_number": "2026하단1070",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 바른산업",
+      "trustee": {
+        "name": "조성우",
+        "phone": "052-0000-1070",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee070@example.invalid"
+      },
+      "asset": {
+        "category": "지식재산권",
+        "subcategory": "디자인권",
+        "title": "디자인권 '바른 기술/브랜드 자산'",
+        "location": "울산광역시 남구 삼산동 170-8",
+        "reference_value": 278500000,
+        "minimum_price": 83600000,
+        "price_ratio": 0.3,
+        "details": {
+          "ip_type": "디자인권",
+          "registration_no": "10-2024-1000070",
+          "application_no": "10-2019-2000070",
+          "ip_name": "바른 친환경소재 관련 기술",
+          "rights_share": 1.0,
+          "expiry_date": "2036-12-31",
+          "license_exists": true
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-08-30",
+        "bid_start_date": "2026-08-25",
+        "bid_end_date": "2026-08-30",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-07-31",
+        "expire_date": "2026-08-30"
+      },
+      "tags": [
+        "울산광역시",
+        "지식재산권",
+        "디자인권",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A071",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1071",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 푸른물산",
+      "trustee": {
+        "name": "문예린",
+        "phone": "054-0000-1071",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee071@example.invalid"
+      },
+      "asset": {
+        "category": "주식",
+        "subcategory": "비상장주식",
+        "title": "주식회사 마루개발 우선주 38,675주",
+        "location": "경상북도 포항시 북구 죽도동 171-9",
+        "reference_value": 393800000,
+        "minimum_price": 118100000,
+        "price_ratio": 0.3,
+        "details": {
+          "company_name": "주식회사 마루개발",
+          "stock_type": "우선주",
+          "listed_status": "비상장",
+          "shares": 38675,
+          "ownership_rate": 1.94,
+          "par_value": 5000,
+          "transfer_restriction": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-09-02",
+        "bid_start_date": "2026-08-28",
+        "bid_end_date": "2026-09-02",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-08-02",
+        "expire_date": "2026-09-02"
+      },
+      "tags": [
+        "경상북도",
+        "주식",
+        "비상장주식",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A072",
+      "court": "부산회생법원",
+      "case_number": "2025하합1072",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 한결건설",
+      "trustee": {
+        "name": "강우진",
+        "phone": "051-0000-1072",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee072@example.invalid"
+      },
+      "asset": {
+        "category": "주식",
+        "subcategory": "상장주식",
+        "title": "주식회사 늘봄테크 보통주 24,397주",
+        "location": "부산광역시 사상구 괘법동 172-1",
+        "reference_value": 89000000,
+        "minimum_price": 26700000,
+        "price_ratio": 0.3,
+        "details": {
+          "company_name": "주식회사 늘봄테크",
+          "stock_type": "보통주",
+          "listed_status": "상장",
+          "shares": 24397,
+          "ownership_rate": 24.03,
+          "par_value": 500,
+          "transfer_restriction": true
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-09-05",
+        "bid_start_date": "2026-08-31",
+        "bid_end_date": "2026-09-05",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-04",
+        "expire_date": "2026-09-05"
+      },
+      "tags": [
+        "부산광역시",
+        "주식",
+        "상장주식",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A073",
+      "court": "울산지방법원",
+      "case_number": "2026하단1073",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 라온시스템",
+      "trustee": {
+        "name": "신하늘",
+        "phone": "052-0000-1073",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee073@example.invalid"
+      },
+      "asset": {
+        "category": "주식",
+        "subcategory": "비상장주식",
+        "title": "주식회사 아람물산 우선주 44,208주",
+        "location": "울산광역시 남구 삼산동 173-2",
+        "reference_value": 76800000,
+        "minimum_price": 46100000,
+        "price_ratio": 0.6,
+        "details": {
+          "company_name": "주식회사 아람물산",
+          "stock_type": "우선주",
+          "listed_status": "비상장",
+          "shares": 44208,
+          "ownership_rate": 31.0,
+          "par_value": 500,
+          "transfer_restriction": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-09-08",
+        "bid_start_date": "2026-09-03",
+        "bid_end_date": "2026-09-08",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-06",
+        "expire_date": "2026-09-08"
+      },
+      "tags": [
+        "울산광역시",
+        "주식",
+        "비상장주식",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A074",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1074",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 마루인베스트",
+      "trustee": {
+        "name": "백지훈",
+        "phone": "054-0000-1074",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee074@example.invalid"
+      },
+      "asset": {
+        "category": "주식",
+        "subcategory": "비상장주식",
+        "title": "주식회사 다솜유통 보통주 27,132주",
+        "location": "경상북도 포항시 북구 죽도동 174-3",
+        "reference_value": 847400000,
+        "minimum_price": 254200000,
+        "price_ratio": 0.3,
+        "details": {
+          "company_name": "주식회사 다솜유통",
+          "stock_type": "보통주",
+          "listed_status": "비상장",
+          "shares": 27132,
+          "ownership_rate": 30.33,
+          "par_value": 5000,
+          "transfer_restriction": false
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-09-11",
+        "bid_start_date": "2026-09-06",
+        "bid_end_date": "2026-09-11",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-08",
+        "expire_date": "2026-09-11"
+      },
+      "tags": [
+        "경상북도",
+        "주식",
+        "비상장주식",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A075",
+      "court": "부산회생법원",
+      "case_number": "2026하합1075",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 늘봄산업",
+      "trustee": {
+        "name": "배유나",
+        "phone": "051-0000-1075",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee075@example.invalid"
+      },
+      "asset": {
+        "category": "주식",
+        "subcategory": "비상장주식",
+        "title": "주식회사 채움솔루션 우선주 12,103주",
+        "location": "부산광역시 사상구 괘법동 175-4",
+        "reference_value": 14200000,
+        "minimum_price": 5700000,
+        "price_ratio": 0.401,
+        "details": {
+          "company_name": "주식회사 채움솔루션",
+          "stock_type": "우선주",
+          "listed_status": "비상장",
+          "shares": 12103,
+          "ownership_rate": 27.49,
+          "par_value": 1000,
+          "transfer_restriction": true
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-09-14",
+        "bid_start_date": "2026-09-09",
+        "bid_end_date": "2026-09-14",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-08-25",
+        "expire_date": "2026-09-14"
+      },
+      "tags": [
+        "부산광역시",
+        "주식",
+        "비상장주식",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A076",
+      "court": "울산지방법원",
+      "case_number": "2025하단1076",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 아람물산",
+      "trustee": {
+        "name": "노준혁",
+        "phone": "052-0000-1076",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee076@example.invalid"
+      },
+      "asset": {
+        "category": "주식",
+        "subcategory": "상장주식",
+        "title": "주식회사 에이스건설 보통주 27,482주",
+        "location": "울산광역시 남구 삼산동 176-5",
+        "reference_value": 968500000,
+        "minimum_price": 290600000,
+        "price_ratio": 0.3,
+        "details": {
+          "company_name": "주식회사 에이스건설",
+          "stock_type": "보통주",
+          "listed_status": "상장",
+          "shares": 27482,
+          "ownership_rate": 9.7,
+          "par_value": 5000,
+          "transfer_restriction": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-09-17",
+        "bid_start_date": "2026-09-12",
+        "bid_end_date": "2026-09-17",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-27",
+        "expire_date": "2026-09-17"
+      },
+      "tags": [
+        "울산광역시",
+        "주식",
+        "상장주식",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A077",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1077",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 다솜건설",
+      "trustee": {
+        "name": "류소연",
+        "phone": "054-0000-1077",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee077@example.invalid"
+      },
+      "asset": {
+        "category": "주식",
+        "subcategory": "비상장주식",
+        "title": "주식회사 가온모터스 우선주 46,458주",
+        "location": "경상북도 포항시 북구 죽도동 177-6",
+        "reference_value": 85400000,
+        "minimum_price": 17100000,
+        "price_ratio": 0.2,
+        "details": {
+          "company_name": "주식회사 가온모터스",
+          "stock_type": "우선주",
+          "listed_status": "비상장",
+          "shares": 46458,
+          "ownership_rate": 30.12,
+          "par_value": 500,
+          "transfer_restriction": false
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-09-20",
+        "bid_start_date": "2026-09-15",
+        "bid_end_date": "2026-09-20",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-29",
+        "expire_date": "2026-09-20"
+      },
+      "tags": [
+        "경상북도",
+        "주식",
+        "비상장주식",
+        "2회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A078",
+      "court": "부산회생법원",
+      "case_number": "2026하합1078",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 채움시스템",
+      "trustee": {
+        "name": "장태민",
+        "phone": "051-0000-1078",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee078@example.invalid"
+      },
+      "asset": {
+        "category": "주식",
+        "subcategory": "비상장주식",
+        "title": "주식회사 다온바이오 보통주 15,077주",
+        "location": "부산광역시 사상구 괘법동 178-7",
+        "reference_value": 50600000,
+        "minimum_price": 25300000,
+        "price_ratio": 0.5,
+        "details": {
+          "company_name": "주식회사 다온바이오",
+          "stock_type": "보통주",
+          "listed_status": "비상장",
+          "shares": 15077,
+          "ownership_rate": 12.56,
+          "par_value": 500,
+          "transfer_restriction": true
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-09-23",
+        "bid_start_date": "2026-09-18",
+        "bid_end_date": "2026-09-23",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-08-31",
+        "expire_date": "2026-09-23"
+      },
+      "tags": [
+        "부산광역시",
+        "주식",
+        "비상장주식",
+        "3회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A079",
+      "court": "울산지방법원",
+      "case_number": "2026하단1079",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 에이스인베스트",
+      "trustee": {
+        "name": "고은채",
+        "phone": "052-0000-1079",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee079@example.invalid"
+      },
+      "asset": {
+        "category": "주식",
+        "subcategory": "비상장주식",
+        "title": "주식회사 누리시스템 우선주 15,415주",
+        "location": "울산광역시 남구 삼산동 179-8",
+        "reference_value": 9000000,
+        "minimum_price": 2700000,
+        "price_ratio": 0.3,
+        "details": {
+          "company_name": "주식회사 누리시스템",
+          "stock_type": "우선주",
+          "listed_status": "비상장",
+          "shares": 15415,
+          "ownership_rate": 14.25,
+          "par_value": 500,
+          "transfer_restriction": false
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-09-26",
+        "bid_start_date": "2026-09-21",
+        "bid_end_date": "2026-09-26",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-09-02",
+        "expire_date": "2026-09-26"
+      },
+      "tags": [
+        "울산광역시",
+        "주식",
+        "비상장주식",
+        "4회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A080",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2025하단1080",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 가온산업",
+      "trustee": {
+        "name": "김민수",
+        "phone": "054-0000-1080",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee080@example.invalid"
+      },
+      "asset": {
+        "category": "주식",
+        "subcategory": "상장주식",
+        "title": "주식회사 해솔로지스 보통주 18,758주",
+        "location": "경상북도 포항시 북구 죽도동 180-9",
+        "reference_value": 72900000,
+        "minimum_price": 29200000,
+        "price_ratio": 0.401,
+        "details": {
+          "company_name": "주식회사 해솔로지스",
+          "stock_type": "보통주",
+          "listed_status": "상장",
+          "shares": 18758,
+          "ownership_rate": 12.61,
+          "par_value": 500,
+          "transfer_restriction": false
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-09-29",
+        "bid_start_date": "2026-09-24",
+        "bid_end_date": "2026-09-29",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-04",
+        "expire_date": "2026-09-29"
+      },
+      "tags": [
+        "경상북도",
+        "주식",
+        "상장주식",
+        "1회차"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A081",
+      "court": "부산회생법원",
+      "case_number": "2026하합1081",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 다온물산",
+      "trustee": {
+        "name": "이서윤",
+        "phone": "051-0000-1081",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee081@example.invalid"
+      },
+      "asset": {
+        "category": "자동차",
+        "subcategory": "승용차",
+        "title": "현대 그랜저 (2024년식)",
+        "location": "부산광역시 사상구 괘법동 181-1",
+        "reference_value": 63700000,
+        "minimum_price": 38200000,
+        "price_ratio": 0.6,
+        "details": {
+          "maker": "현대",
+          "model": "그랜저",
+          "year": 2024,
+          "mileage_km": 25235,
+          "fuel": "가솔린",
+          "registration_no": "11가1081",
+          "storage_location": "부산광역시 사상구 괘법동 181-1",
+          "condition": "정상 운행 확인 필요"
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-10-02",
+        "bid_start_date": "2026-09-27",
+        "bid_end_date": "2026-10-02",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-06",
+        "expire_date": "2026-10-02"
+      },
+      "tags": [
+        "부산광역시",
+        "자동차",
+        "현대",
+        "그랜저"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A082",
+      "court": "울산지방법원",
+      "case_number": "2026하단1082",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 누리건설",
+      "trustee": {
+        "name": "박준호",
+        "phone": "052-0000-1082",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee082@example.invalid"
+      },
+      "asset": {
+        "category": "자동차",
+        "subcategory": "화물차",
+        "title": "현대 포터Ⅱ (2022년식)",
+        "location": "울산광역시 남구 삼산동 182-2",
+        "reference_value": 22600000,
+        "minimum_price": 13600000,
+        "price_ratio": 0.602,
+        "details": {
+          "maker": "현대",
+          "model": "포터Ⅱ",
+          "year": 2022,
+          "mileage_km": 28028,
+          "fuel": "디젤",
+          "registration_no": "12가1082",
+          "storage_location": "울산광역시 남구 삼산동 182-2",
+          "condition": "정상 운행 확인 필요"
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-10-05",
+        "bid_start_date": "2026-09-30",
+        "bid_end_date": "2026-10-05",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-08",
+        "expire_date": "2026-10-05"
+      },
+      "tags": [
+        "울산광역시",
+        "자동차",
+        "현대",
+        "포터Ⅱ"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A083",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1083",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 해솔시스템",
+      "trustee": {
+        "name": "최가은",
+        "phone": "054-0000-1083",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee083@example.invalid"
+      },
+      "asset": {
+        "category": "자동차",
+        "subcategory": "승용차",
+        "title": "기아 카니발 (2024년식)",
+        "location": "경상북도 포항시 북구 죽도동 183-3",
+        "reference_value": 36300000,
+        "minimum_price": 21800000,
+        "price_ratio": 0.601,
+        "details": {
+          "maker": "기아",
+          "model": "카니발",
+          "year": 2024,
+          "mileage_km": 132398,
+          "fuel": "디젤",
+          "registration_no": "13가1083",
+          "storage_location": "경상북도 포항시 북구 죽도동 183-3",
+          "condition": "정상 운행 확인 필요"
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-10-08",
+        "bid_start_date": "2026-10-03",
+        "bid_end_date": "2026-10-08",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-09-10",
+        "expire_date": "2026-10-08"
+      },
+      "tags": [
+        "경상북도",
+        "자동차",
+        "기아",
+        "카니발"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A084",
+      "court": "부산회생법원",
+      "case_number": "2025하합1084",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 미래인베스트",
+      "trustee": {
+        "name": "정현우",
+        "phone": "051-0000-1084",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee084@example.invalid"
+      },
+      "asset": {
+        "category": "자동차",
+        "subcategory": "승용차",
+        "title": "기아 K8 (2024년식)",
+        "location": "부산광역시 사상구 괘법동 184-4",
+        "reference_value": 55200000,
+        "minimum_price": 27600000,
+        "price_ratio": 0.5,
+        "details": {
+          "maker": "기아",
+          "model": "K8",
+          "year": 2024,
+          "mileage_km": 84773,
+          "fuel": "가솔린",
+          "registration_no": "14가1084",
+          "storage_location": "부산광역시 사상구 괘법동 184-4",
+          "condition": "정상 운행 확인 필요"
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-10-11",
+        "bid_start_date": "2026-10-06",
+        "bid_end_date": "2026-10-11",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-12",
+        "expire_date": "2026-10-11"
+      },
+      "tags": [
+        "부산광역시",
+        "자동차",
+        "기아",
+        "K8"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A085",
+      "court": "울산지방법원",
+      "case_number": "2026하단1085",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 한빛산업",
+      "trustee": {
+        "name": "한지민",
+        "phone": "052-0000-1085",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee085@example.invalid"
+      },
+      "asset": {
+        "category": "자동차",
+        "subcategory": "승용차",
+        "title": "제네시스 G80 (2024년식)",
+        "location": "울산광역시 남구 삼산동 185-5",
+        "reference_value": 8100000,
+        "minimum_price": 4000000,
+        "price_ratio": 0.494,
+        "details": {
+          "maker": "제네시스",
+          "model": "G80",
+          "year": 2024,
+          "mileage_km": 113478,
+          "fuel": "가솔린",
+          "registration_no": "15가1085",
+          "storage_location": "울산광역시 남구 삼산동 185-5",
+          "condition": "상태 양호 추정"
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-10-14",
+        "bid_start_date": "2026-10-09",
+        "bid_end_date": "2026-10-14",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-14",
+        "expire_date": "2026-10-14"
+      },
+      "tags": [
+        "울산광역시",
+        "자동차",
+        "제네시스",
+        "G80"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A086",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1086",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 새롬물산",
+      "trustee": {
+        "name": "윤도현",
+        "phone": "054-0000-1086",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee086@example.invalid"
+      },
+      "asset": {
+        "category": "자동차",
+        "subcategory": "승용차",
+        "title": "쉐보레 트래버스 (2019년식)",
+        "location": "경상북도 포항시 북구 죽도동 186-6",
+        "reference_value": 62400000,
+        "minimum_price": 37400000,
+        "price_ratio": 0.599,
+        "details": {
+          "maker": "쉐보레",
+          "model": "트래버스",
+          "year": 2019,
+          "mileage_km": 181356,
+          "fuel": "가솔린",
+          "registration_no": "16가1086",
+          "storage_location": "경상북도 포항시 북구 죽도동 186-6",
+          "condition": "장기보관"
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-10-17",
+        "bid_start_date": "2026-10-12",
+        "bid_end_date": "2026-10-17",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-16",
+        "expire_date": "2026-10-17"
+      },
+      "tags": [
+        "경상북도",
+        "자동차",
+        "쉐보레",
+        "트래버스"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A087",
+      "court": "부산회생법원",
+      "case_number": "2026하합1087",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 온누리건설",
+      "trustee": {
+        "name": "오수빈",
+        "phone": "051-0000-1087",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee087@example.invalid"
+      },
+      "asset": {
+        "category": "자동차",
+        "subcategory": "승용차",
+        "title": "르노코리아 QM6 (2019년식)",
+        "location": "부산광역시 사상구 괘법동 187-7",
+        "reference_value": 32600000,
+        "minimum_price": 19600000,
+        "price_ratio": 0.601,
+        "details": {
+          "maker": "르노코리아",
+          "model": "QM6",
+          "year": 2019,
+          "mileage_km": 125057,
+          "fuel": "LPG",
+          "registration_no": "17가1087",
+          "storage_location": "부산광역시 사상구 괘법동 187-7",
+          "condition": "장기보관"
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-10-20",
+        "bid_start_date": "2026-10-15",
+        "bid_end_date": "2026-10-20",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-09-18",
+        "expire_date": "2026-10-20"
+      },
+      "tags": [
+        "부산광역시",
+        "자동차",
+        "르노코리아",
+        "QM6"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A088",
+      "court": "울산지방법원",
+      "case_number": "2025하단1088",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 세움시스템",
+      "trustee": {
+        "name": "임태훈",
+        "phone": "052-0000-1088",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee088@example.invalid"
+      },
+      "asset": {
+        "category": "자동차",
+        "subcategory": "승용차",
+        "title": "KG모빌리티 렉스턴 (2024년식)",
+        "location": "울산광역시 남구 삼산동 188-8",
+        "reference_value": 32200000,
+        "minimum_price": 16100000,
+        "price_ratio": 0.5,
+        "details": {
+          "maker": "KG모빌리티",
+          "model": "렉스턴",
+          "year": 2024,
+          "mileage_km": 68289,
+          "fuel": "디젤",
+          "registration_no": "18가1088",
+          "storage_location": "울산광역시 남구 삼산동 188-8",
+          "condition": "상태 양호 추정"
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-10-23",
+        "bid_start_date": "2026-10-18",
+        "bid_end_date": "2026-10-23",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-20",
+        "expire_date": "2026-10-23"
+      },
+      "tags": [
+        "울산광역시",
+        "자동차",
+        "KG모빌리티",
+        "렉스턴"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A089",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1089",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 이룸인베스트",
+      "trustee": {
+        "name": "서지연",
+        "phone": "054-0000-1089",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee089@example.invalid"
+      },
+      "asset": {
+        "category": "기계기구",
+        "subcategory": "CNC 선반",
+        "title": "CNC 선반 7점 일괄",
+        "location": "경상북도 포항시 북구 죽도동 189-9",
+        "reference_value": 67000000,
+        "minimum_price": 30200000,
+        "price_ratio": 0.451,
+        "details": {
+          "item_name": "CNC 선반",
+          "manufacturer": "누리산업",
+          "model": "M-089",
+          "manufacturing_year": 2022,
+          "quantity": 7,
+          "operation_status": "가동 여부 확인 필요",
+          "removal_required": true,
+          "removal_cost_burden": "매수인"
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-10-26",
+        "bid_start_date": "2026-10-21",
+        "bid_end_date": "2026-10-26",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-09-22",
+        "expire_date": "2026-10-26"
+      },
+      "tags": [
+        "경상북도",
+        "기계기구",
+        "CNC 선반",
+        "철거필요"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A090",
+      "court": "부산회생법원",
+      "case_number": "2026하합1090",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 바른산업",
+      "trustee": {
+        "name": "조성우",
+        "phone": "051-0000-1090",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee090@example.invalid"
+      },
+      "asset": {
+        "category": "기계기구",
+        "subcategory": "머시닝센터",
+        "title": "머시닝센터 5점 일괄",
+        "location": "부산광역시 사상구 괘법동 190-1",
+        "reference_value": 104000000,
+        "minimum_price": 36400000,
+        "price_ratio": 0.35,
+        "details": {
+          "item_name": "머시닝센터",
+          "manufacturer": "누리산업",
+          "model": "M-090",
+          "manufacturing_year": 2023,
+          "quantity": 5,
+          "operation_status": "장기 미사용",
+          "removal_required": true,
+          "removal_cost_burden": "매수인"
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-10-29",
+        "bid_start_date": "2026-10-24",
+        "bid_end_date": "2026-10-29",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-09",
+        "expire_date": "2026-10-29"
+      },
+      "tags": [
+        "부산광역시",
+        "기계기구",
+        "머시닝센터",
+        "철거필요"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A091",
+      "court": "울산지방법원",
+      "case_number": "2026하단1091",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 푸른물산",
+      "trustee": {
+        "name": "문예린",
+        "phone": "052-0000-1091",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee091@example.invalid"
+      },
+      "asset": {
+        "category": "기계기구",
+        "subcategory": "사출성형기",
+        "title": "사출성형기 8점 일괄",
+        "location": "울산광역시 남구 삼산동 191-2",
+        "reference_value": 154800000,
+        "minimum_price": 85100000,
+        "price_ratio": 0.55,
+        "details": {
+          "item_name": "사출성형기",
+          "manufacturer": "한빛기계",
+          "model": "M-091",
+          "manufacturing_year": 2022,
+          "quantity": 8,
+          "operation_status": "부분 수리 필요",
+          "removal_required": true,
+          "removal_cost_burden": "매수인"
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-11-01",
+        "bid_start_date": "2026-10-27",
+        "bid_end_date": "2026-11-01",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-10-11",
+        "expire_date": "2026-11-01"
+      },
+      "tags": [
+        "울산광역시",
+        "기계기구",
+        "사출성형기",
+        "철거필요"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A092",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2025하단1092",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 한결건설",
+      "trustee": {
+        "name": "강우진",
+        "phone": "054-0000-1092",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee092@example.invalid"
+      },
+      "asset": {
+        "category": "기계기구",
+        "subcategory": "레이저절단기",
+        "title": "레이저절단기 3점 일괄",
+        "location": "경상북도 포항시 북구 죽도동 192-3",
+        "reference_value": 37800000,
+        "minimum_price": 17000000,
+        "price_ratio": 0.45,
+        "details": {
+          "item_name": "레이저절단기",
+          "manufacturer": "세움테크",
+          "model": "M-092",
+          "manufacturing_year": 2015,
+          "quantity": 3,
+          "operation_status": "정상 가동 추정",
+          "removal_required": true,
+          "removal_cost_burden": "매수인"
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-11-04",
+        "bid_start_date": "2026-10-30",
+        "bid_end_date": "2026-11-04",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-13",
+        "expire_date": "2026-11-04"
+      },
+      "tags": [
+        "경상북도",
+        "기계기구",
+        "레이저절단기",
+        "철거필요"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A093",
+      "court": "부산회생법원",
+      "case_number": "2026하합1093",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 라온시스템",
+      "trustee": {
+        "name": "신하늘",
+        "phone": "051-0000-1093",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee093@example.invalid"
+      },
+      "asset": {
+        "category": "기계기구",
+        "subcategory": "산업용 프레스",
+        "title": "산업용 프레스 5점 일괄",
+        "location": "부산광역시 사상구 괘법동 193-4",
+        "reference_value": 83600000,
+        "minimum_price": 29300000,
+        "price_ratio": 0.35,
+        "details": {
+          "item_name": "산업용 프레스",
+          "manufacturer": "한빛기계",
+          "model": "M-093",
+          "manufacturing_year": 2014,
+          "quantity": 5,
+          "operation_status": "가동 여부 확인 필요",
+          "removal_required": true,
+          "removal_cost_burden": "매수인"
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-11-07",
+        "bid_start_date": "2026-11-02",
+        "bid_end_date": "2026-11-07",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-15",
+        "expire_date": "2026-11-07"
+      },
+      "tags": [
+        "부산광역시",
+        "기계기구",
+        "산업용 프레스",
+        "철거필요"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A094",
+      "court": "울산지방법원",
+      "case_number": "2026하단1094",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 마루인베스트",
+      "trustee": {
+        "name": "백지훈",
+        "phone": "052-0000-1094",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee094@example.invalid"
+      },
+      "asset": {
+        "category": "기계기구",
+        "subcategory": "포장기",
+        "title": "포장기 4점 일괄",
+        "location": "울산광역시 남구 삼산동 194-5",
+        "reference_value": 165700000,
+        "minimum_price": 41400000,
+        "price_ratio": 0.25,
+        "details": {
+          "item_name": "포장기",
+          "manufacturer": "누리산업",
+          "model": "M-094",
+          "manufacturing_year": 2020,
+          "quantity": 4,
+          "operation_status": "정상 가동 추정",
+          "removal_required": true,
+          "removal_cost_burden": "매수인"
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-11-10",
+        "bid_start_date": "2026-11-05",
+        "bid_end_date": "2026-11-10",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-17",
+        "expire_date": "2026-11-10"
+      },
+      "tags": [
+        "울산광역시",
+        "기계기구",
+        "포장기",
+        "철거필요"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A095",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1095",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 늘봄산업",
+      "trustee": {
+        "name": "배유나",
+        "phone": "054-0000-1095",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee095@example.invalid"
+      },
+      "asset": {
+        "category": "기계기구",
+        "subcategory": "냉동설비",
+        "title": "냉동설비 7점 일괄",
+        "location": "경상북도 포항시 북구 죽도동 195-6",
+        "reference_value": 172000000,
+        "minimum_price": 94600000,
+        "price_ratio": 0.55,
+        "details": {
+          "item_name": "냉동설비",
+          "manufacturer": "한빛기계",
+          "model": "M-095",
+          "manufacturing_year": 2016,
+          "quantity": 7,
+          "operation_status": "가동 여부 확인 필요",
+          "removal_required": true,
+          "removal_cost_burden": "매수인"
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-11-13",
+        "bid_start_date": "2026-11-08",
+        "bid_end_date": "2026-11-13",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-10-19",
+        "expire_date": "2026-11-13"
+      },
+      "tags": [
+        "경상북도",
+        "기계기구",
+        "냉동설비",
+        "철거필요"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A096",
+      "court": "부산회생법원",
+      "case_number": "2025하합1096",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 아람물산",
+      "trustee": {
+        "name": "노준혁",
+        "phone": "051-0000-1096",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 2층",
+        "email": "trustee096@example.invalid"
+      },
+      "asset": {
+        "category": "기계기구",
+        "subcategory": "지게차",
+        "title": "지게차 2점 일괄",
+        "location": "부산광역시 사상구 괘법동 196-7",
+        "reference_value": 149300000,
+        "minimum_price": 52300000,
+        "price_ratio": 0.35,
+        "details": {
+          "item_name": "지게차",
+          "manufacturer": "한빛기계",
+          "model": "M-096",
+          "manufacturing_year": 2022,
+          "quantity": 2,
+          "operation_status": "부분 수리 필요",
+          "removal_required": true,
+          "removal_cost_burden": "매수인"
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-11-16",
+        "bid_start_date": "2026-11-11",
+        "bid_end_date": "2026-11-16",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-21",
+        "expire_date": "2026-11-16"
+      },
+      "tags": [
+        "부산광역시",
+        "기계기구",
+        "지게차",
+        "철거필요"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A097",
+      "court": "울산지방법원",
+      "case_number": "2026하단1097",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 다솜건설",
+      "trustee": {
+        "name": "류소연",
+        "phone": "052-0000-1097",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 3층",
+        "email": "trustee097@example.invalid"
+      },
+      "asset": {
+        "category": "동산",
+        "subcategory": "일괄매각",
+        "title": "사무용 가구 일괄",
+        "location": "울산광역시 남구 삼산동 197-8",
+        "reference_value": 7100000,
+        "minimum_price": 2100000,
+        "price_ratio": 0.296,
+        "details": {
+          "item_name": "사무용 가구 일괄",
+          "quantity": 113,
+          "condition": "중고",
+          "storage_location": "울산광역시 남구 삼산동 197-8",
+          "pickup_required": true
+        }
+      },
+      "sale": {
+        "round": 2,
+        "bid_date": "2026-11-19",
+        "bid_start_date": "2026-11-14",
+        "bid_end_date": "2026-11-19",
+        "method": "공개경쟁입찰",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-23",
+        "expire_date": "2026-11-19"
+      },
+      "tags": [
+        "울산광역시",
+        "동산",
+        "사무용 가구 일괄"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A098",
+      "court": "대구지방법원 포항지원",
+      "case_number": "2026하단1098",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 채움시스템",
+      "trustee": {
+        "name": "장태민",
+        "phone": "054-0000-1098",
+        "office_address": "경상북도 포항시 북구 법원로 00, 가상법률사무소 4층",
+        "email": "trustee098@example.invalid"
+      },
+      "asset": {
+        "category": "동산",
+        "subcategory": "일괄매각",
+        "title": "카페 집기 일괄",
+        "location": "경상북도 포항시 북구 죽도동 198-9",
+        "reference_value": 40400000,
+        "minimum_price": 12100000,
+        "price_ratio": 0.3,
+        "details": {
+          "item_name": "카페 집기 일괄",
+          "quantity": 107,
+          "condition": "현장 확인 필요",
+          "storage_location": "경상북도 포항시 북구 죽도동 198-9",
+          "pickup_required": true
+        }
+      },
+      "sale": {
+        "round": 3,
+        "bid_date": "2026-11-22",
+        "bid_start_date": "2026-11-17",
+        "bid_end_date": "2026-11-22",
+        "method": "최고가매각",
+        "deposit_rate": 10,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-10-25",
+        "expire_date": "2026-11-22"
+      },
+      "tags": [
+        "경상북도",
+        "동산",
+        "카페 집기 일괄"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A099",
+      "court": "부산회생법원",
+      "case_number": "2026하합1099",
+      "case_type": "법인파산",
+      "debtor_name": "주식회사 에이스인베스트",
+      "trustee": {
+        "name": "고은채",
+        "phone": "051-0000-1099",
+        "office_address": "부산광역시 사상구 법원로 00, 가상법률사무소 5층",
+        "email": "trustee099@example.invalid"
+      },
+      "asset": {
+        "category": "동산",
+        "subcategory": "일괄매각",
+        "title": "주방설비 일괄",
+        "location": "부산광역시 사상구 괘법동 199-1",
+        "reference_value": 57700000,
+        "minimum_price": 23100000,
+        "price_ratio": 0.4,
+        "details": {
+          "item_name": "주방설비 일괄",
+          "quantity": 101,
+          "condition": "현장 확인 필요",
+          "storage_location": "부산광역시 사상구 괘법동 199-1",
+          "pickup_required": true
+        }
+      },
+      "sale": {
+        "round": 4,
+        "bid_date": "2026-11-25",
+        "bid_start_date": "2026-11-20",
+        "bid_end_date": "2026-11-25",
+        "method": "서면입찰",
+        "deposit_rate": 20,
+        "status": "유찰후재매각"
+      },
+      "notice": {
+        "posted_date": "2026-10-27",
+        "expire_date": "2026-11-25"
+      },
+      "tags": [
+        "부산광역시",
+        "동산",
+        "주방설비 일괄"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    },
+    {
+      "id": "A100",
+      "court": "울산지방법원",
+      "case_number": "2025하단1100",
+      "case_type": "개인파산",
+      "debtor_name": "주식회사 가온산업",
+      "trustee": {
+        "name": "김민수",
+        "phone": "052-0000-1100",
+        "office_address": "울산광역시 남구 법원로 00, 가상법률사무소 1층",
+        "email": "trustee100@example.invalid"
+      },
+      "asset": {
+        "category": "동산",
+        "subcategory": "일괄매각",
+        "title": "미술품 일괄",
+        "location": "울산광역시 남구 삼산동 200-2",
+        "reference_value": 53200000,
+        "minimum_price": 26600000,
+        "price_ratio": 0.5,
+        "details": {
+          "item_name": "미술품 일괄",
+          "quantity": 111,
+          "condition": "현장 확인 필요",
+          "storage_location": "울산광역시 남구 삼산동 200-2",
+          "pickup_required": true
+        }
+      },
+      "sale": {
+        "round": 1,
+        "bid_date": "2026-08-20",
+        "bid_start_date": "2026-08-15",
+        "bid_end_date": "2026-08-20",
+        "method": "일반경쟁입찰",
+        "deposit_rate": 0,
+        "status": "입찰예정"
+      },
+      "notice": {
+        "posted_date": "2026-07-21",
+        "expire_date": "2026-08-20"
+      },
+      "tags": [
+        "울산광역시",
+        "동산",
+        "미술품 일괄"
+      ],
+      "is_sample": true,
+      "source_type": "SAMPLE_DATA"
+    }
+  ]
+}
