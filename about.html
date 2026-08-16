@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>서비스 소개 | 파산픽 AI</title>
+
+  <meta
+    name="description"
+    content="파산픽 AI의 서비스 목적, AI 검색 방식, 데이터 기준과 이용 안내를 확인하세요."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        <span class="logo-mark">P</span>
+        <span>파산픽 AI</span>
+      </a>
+
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="index.html">홈</a>
+        <a href="search.html">AI 물건검색</a>
+        <a href="about.html" class="active">서비스 소개</a>
+      </nav>
+
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="다크 모드 전환"
+      >
+        🌙
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- Intro -->
+    <section class="about-hero">
+      <div class="container about-container">
+
+        <span class="section-label">ABOUT SERVICE</span>
+
+        <h1>
+          흩어진 파산재단 매각정보를<br>
+          <span class="highlight">더 쉽게 찾는 방법</span>
+        </h1>
+
+        <p>
+          파산픽 AI는 파산재단 매각물건 정보를 구조화하고,
+          사용자가 자연어로 원하는 조건을 입력하면
+          AI가 검색 의도를 이해하여 적합한 물건을 찾아주는
+          교육용 AI 웹 서비스입니다.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- Problem -->
+    <section class="about-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">WHY</span>
+          <h2>왜 이 서비스를 만들었나요?</h2>
+        </div>
+
+        <div class="about-card-grid">
+
+          <article class="about-card">
+            <span class="about-icon">01</span>
+            <h3>공고 정보가 분산되어 있습니다</h3>
+            <p>
+              파산재단 매각공고는 게시글과 첨부파일에 다양한 정보가
+              포함되어 있어 여러 공고를 한 번에 비교하기 어렵습니다.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <span class="about-icon">02</span>
+            <h3>검색 조건이 다양합니다</h3>
+            <p>
+              지역, 자산유형, 가격, 입찰일, 매각회차 등
+              사용자가 중요하게 보는 조건은 서로 다릅니다.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <span class="about-icon">03</span>
+            <h3>자연어 검색이 더 편리합니다</h3>
+            <p>
+              복잡한 필터를 하나씩 설정하는 대신 평소 말하듯
+              조건을 입력하면 검색할 수 있도록 설계했습니다.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- How AI works -->
+    <section class="about-section about-section-alt">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">AI PROCESS</span>
+          <h2>AI는 어떤 역할을 하나요?</h2>
+          <p>
+            AI가 물건을 임의로 만들어내는 것이 아니라,
+            사용자의 검색 문장을 구조화하는 역할을 담당합니다.
+          </p>
+        </div>
+
+
+        <div class="process-flow">
+
+          <div class="process-step">
+            <span>01</span>
+            <strong>사용자 입력</strong>
+            <p>
+              “대전에 있는 5천만원 이하 부동산 찾아줘”
+            </p>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <div class="process-step">
+            <span>02</span>
+            <strong>AI 조건 분석</strong>
+            <p>
+              지역, 자산유형, 가격 등 검색조건으로 변환
+            </p>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <div class="process-step">
+            <span>03</span>
+            <strong>데이터 검색</strong>
+            <p>
+              구조화된 조건을 이용해 샘플 DB에서 검색
+            </p>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <div class="process-step">
+            <span>04</span>
+            <strong>검색결과 제공</strong>
+            <p>
+              조건에 맞는 매각물건을 카드 형태로 표시
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Asset types -->
+    <section class="about-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">DATA</span>
+          <h2>어떤 매각물건을 검색할 수 있나요?</h2>
+          <p>
+            현재 교육용 데이터에는 다양한 자산 유형의
+            가상 매각물건 100건이 포함되어 있습니다.
+          </p>
+        </div>
+
+
+        <div class="asset-type-grid">
+
+          <div class="asset-type-card">
+            <span>🏢</span>
+            <strong>부동산</strong>
+            <p>토지, 아파트, 상가, 공장 등</p>
+          </div>
+
+          <div class="asset-type-card">
+            <span>💰</span>
+            <strong>채권</strong>
+            <p>대여금, 매출채권, 구상금 등</p>
+          </div>
+
+          <div class="asset-type-card">
+            <span>💡</span>
+            <strong>지식재산권</strong>
+            <p>특허권, 상표권, 디자인권 등</p>
+          </div>
+
+          <div class="asset-type-card">
+            <span>📈</span>
+            <strong>주식</strong>
+            <p>상장주식 및 비상장주식</p>
+          </div>
+
+          <div class="asset-type-card">
+            <span>🚗</span>
+            <strong>자동차</strong>
+            <p>승용차, 화물차 등</p>
+          </div>
+
+          <div class="asset-type-card">
+            <span>⚙️</span>
+            <strong>기계·동산</strong>
+            <p>산업기계, 장비, 집기 등</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Tech -->
+    <section class="about-section about-section-alt">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">TECH STACK</span>
+          <h2>서비스는 이렇게 구성됩니다</h2>
+        </div>
+
+
+        <div class="tech-grid">
+
+          <article class="tech-card">
+            <strong>Frontend</strong>
+            <p>HTML / CSS / JavaScript</p>
+          </article>
+
+          <article class="tech-card">
+            <strong>Backend</strong>
+            <p>Python / Vercel Serverless Functions</p>
+          </article>
+
+          <article class="tech-card">
+            <strong>AI</strong>
+            <p>Gemini API</p>
+          </article>
+
+          <article class="tech-card">
+            <strong>Data</strong>
+            <p>JSON 기반 교육용 샘플 DB</p>
+          </article>
+
+          <article class="tech-card">
+            <strong>Deploy</strong>
+            <p>GitHub / Vercel</p>
+          </article>
+
+          <article class="tech-card">
+            <strong>Analytics</strong>
+            <p>Google Analytics 4</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Limitation -->
+    <section class="about-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">NOTICE</span>
+          <h2>이용 전 확인해주세요</h2>
+        </div>
+
+
+        <div class="notice-box about-notice">
+
+          <strong>이 서비스는 교육 및 과제 수행을 위한 프로젝트입니다.</strong>
+
+          <ul>
+            <li>
+              서비스에 표시되는 사건번호, 채무자명, 관재인,
+              연락처 및 주소는 모두 가상 데이터입니다.
+            </li>
+
+            <li>
+              실제 법원 또는 파산재단 매각공고와 연결되지 않습니다.
+            </li>
+
+            <li>
+              검색 결과는 투자 또는 법률적 판단을 위한 자료로
+              사용할 수 없습니다.
+            </li>
+
+            <li>
+              실제 서비스로 확장할 경우 공식 공고 원문을
+              다시 확인하는 절차가 필요합니다.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="about-cta">
+      <div class="container">
+
+        <div class="about-cta-box">
+
+          <div>
+            <span class="section-label">TRY IT</span>
+            <h2>원하는 매각물건을 검색해보세요.</h2>
+            <p>
+              복잡한 검색 조건도 자연어 한 문장으로 시작할 수 있습니다.
+            </p>
+          </div>
+
+          <a href="search.html" class="btn btn-primary">
+            AI 물건검색
+            <span aria-hidden="true">→</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <div>
+        <strong>파산픽 AI</strong>
+        <p>AI 기반 파산재단 매각물건 검색 서비스</p>
+      </div>
+
+      <p class="copyright">
+        A1-3 AI Web Development Project
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
