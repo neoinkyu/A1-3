@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>파산픽 AI | 파산재단 매각물건 AI 검색</title>
+
+  <meta
+    name="description"
+    content="자연어로 원하는 조건을 입력하면 AI가 파산재단 매각물건을 검색하고 추천합니다."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        <span class="logo-mark">P</span>
+        <span>파산픽 AI</span>
+      </a>
+
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="index.html" class="active">홈</a>
+        <a href="search.html">AI 물건검색</a>
+        <a href="about.html">서비스 소개</a>
+      </nav>
+
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="다크 모드 전환"
+      >
+        🌙
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-content">
+
+        <div class="hero-badge">
+          AI 기반 파산재단 매각물건 검색
+        </div>
+
+        <h1>
+          복잡한 파산재단 매각공고,<br>
+          <span class="highlight">AI에게 조건만 말해보세요.</span>
+        </h1>
+
+        <p class="hero-description">
+          지역, 자산 유형, 가격, 입찰 일정 등 원하는 조건을
+          자연어로 입력하면 AI가 검색 조건을 분석하고
+          적합한 매각물건을 찾아드립니다.
+        </p>
+
+        <div class="hero-actions">
+          <a href="search.html" class="btn btn-primary">
+            AI 물건 찾아보기
+            <span aria-hidden="true">→</span>
+          </a>
+
+          <a href="about.html" class="btn btn-secondary">
+            서비스 알아보기
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Search examples -->
+    <section class="example-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">SEARCH EXAMPLE</span>
+          <h2>이렇게 검색해보세요</h2>
+          <p>
+            복잡한 검색조건을 직접 설정할 필요 없이 평소 말하듯 입력할 수 있습니다.
+          </p>
+        </div>
+
+        <div class="example-grid">
+
+          <a
+            class="example-card"
+            href="search.html?example=대전에 있는 5천만원 이하 부동산 찾아줘"
+          >
+            <span class="example-icon">🏢</span>
+            <p>대전에 있는 5천만원 이하 부동산 찾아줘</p>
+            <span class="example-arrow">→</span>
+          </a>
+
+          <a
+            class="example-card"
+            href="search.html?example=최저가 1천만원 이하인 특허권 추천해줘"
+          >
+            <span class="example-icon">💡</span>
+            <p>최저가 1천만원 이하인 특허권 추천해줘</p>
+            <span class="example-arrow">→</span>
+          </a>
+
+          <a
+            class="example-card"
+            href="search.html?example=앞으로 30일 이내 입찰하는 물건 보여줘"
+          >
+            <span class="example-icon">📅</span>
+            <p>앞으로 30일 이내 입찰하는 물건 보여줘</p>
+            <span class="example-arrow">→</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Features -->
+    <section class="feature-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">HOW IT WORKS</span>
+          <h2>AI 검색은 이렇게 작동합니다</h2>
+        </div>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <span class="feature-number">01</span>
+            <h3>자연어로 입력</h3>
+            <p>
+              지역, 가격, 자산 종류 등 원하는 조건을
+              일상적인 문장으로 입력합니다.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">02</span>
+            <h3>AI가 조건 분석</h3>
+            <p>
+              AI가 사용자의 문장을 분석해 검색에 필요한
+              조건을 구조화합니다.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">03</span>
+            <h3>적합한 물건 추천</h3>
+            <p>
+              구조화된 조건을 바탕으로 데이터에서 적합한
+              매각물건을 찾아 보여줍니다.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Sample data notice -->
+    <section class="notice-section">
+      <div class="container">
+
+        <div class="notice-box">
+          <div>
+            <strong>교육용 프로젝트 안내</strong>
+            <p>
+              현재 서비스에 표시되는 사건번호, 물건정보, 파산관재인 및
+              매각조건은 실제 공고가 아닌 교육용 샘플 데이터입니다.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <div>
+        <strong>파산픽 AI</strong>
+        <p>AI 기반 파산재단 매각물건 검색 서비스</p>
+      </div>
+
+      <p class="copyright">
+        A1-3 AI Web Development Project
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
