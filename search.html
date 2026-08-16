@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI 물건검색 | 파산픽 AI</title>
+
+  <meta
+    name="description"
+    content="자연어로 원하는 조건을 입력하고 파산재단 매각물건을 검색해보세요."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        <span class="logo-mark">P</span>
+        <span>파산픽 AI</span>
+      </a>
+
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="index.html">홈</a>
+        <a href="search.html" class="active">AI 물건검색</a>
+        <a href="about.html">서비스 소개</a>
+      </nav>
+
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="다크 모드 전환"
+      >
+        🌙
+      </button>
+
+    </div>
+  </header>
+
+
+  <main class="search-page">
+
+    <section class="search-hero">
+      <div class="container search-container">
+
+        <span class="section-label">AI AUCTION SEARCH</span>
+
+        <h1>어떤 매각물건을 찾고 계신가요?</h1>
+
+        <p>
+          지역, 가격, 자산 유형, 입찰일 등을 평소 말하듯 입력해보세요.
+        </p>
+
+
+        <form id="search-form" class="ai-search-form">
+
+          <label for="search-input" class="sr-only">
+            검색조건 입력
+          </label>
+
+          <textarea
+            id="search-input"
+            name="query"
+            rows="4"
+            maxlength="300"
+            placeholder="예: 대전·세종에 있는 5천만원 이하 부동산 중 입찰일이 가까운 물건 추천해줘."
+            required
+          ></textarea>
+
+          <div class="search-form-bottom">
+
+            <span id="character-count" class="character-count">
+              0 / 300
+            </span>
+
+            <button
+              id="search-button"
+              type="submit"
+              class="btn btn-primary"
+            >
+              AI로 검색하기
+              <span aria-hidden="true">→</span>
+            </button>
+
+          </div>
+
+        </form>
+
+
+        <div class="quick-search">
+
+          <span>검색 예시</span>
+
+          <div class="quick-search-buttons">
+
+            <button
+              type="button"
+              class="quick-search-button"
+              data-query="대전에 있는 5천만원 이하 부동산 찾아줘"
+            >
+              대전 · 부동산 · 5천만원 이하
+            </button>
+
+            <button
+              type="button"
+              class="quick-search-button"
+              data-query="최저가 1천만원 이하인 특허권 추천해줘"
+            >
+              특허권 · 1천만원 이하
+            </button>
+
+            <button
+              type="button"
+              class="quick-search-button"
+              data-query="앞으로 30일 이내 입찰하는 물건 보여줘"
+            >
+              30일 이내 입찰
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div
+          id="search-message"
+          class="search-message"
+          role="alert"
+          hidden
+        ></div>
+
+      </div>
+    </section>
+
+
+    <!-- Loading -->
+    <section
+      id="loading-section"
+      class="result-section"
+      hidden
+    >
+      <div class="container">
+
+        <div class="loading-box">
+          <div class="loading-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <strong>AI가 검색 조건을 분석하고 있습니다.</strong>
+
+          <p>
+            입력한 내용을 이해하고 적합한 매각물건을 찾고 있습니다.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Parsed conditions -->
+    <section
+      id="condition-section"
+      class="result-section"
+      hidden
+    >
+      <div class="container">
+
+        <div class="result-heading">
+          <div>
+            <span class="section-label">SEARCH CONDITIONS</span>
+            <h2>AI가 이해한 검색조건</h2>
+          </div>
+        </div>
+
+        <div id="condition-list" class="condition-list">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Results -->
+    <section
+      id="results-section"
+      class="result-section"
+      hidden
+    >
+      <div class="container">
+
+        <div class="result-heading">
+
+          <div>
+            <span class="section-label">RESULT</span>
+            <h2>추천 매각물건</h2>
+          </div>
+
+          <strong id="result-count" class="result-count">
+            0건
+          </strong>
+
+        </div>
+
+        <div id="auction-results" class="auction-results">
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="notice-section">
+      <div class="container">
+
+        <div class="notice-box">
+          <strong>교육용 샘플 데이터</strong>
+          <p>
+            이 서비스의 사건번호, 물건정보, 파산관재인 및 매각조건은
+            실제 공고가 아닌 교육용 가상 데이터입니다.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <div>
+        <strong>파산픽 AI</strong>
+        <p>AI 기반 파산재단 매각물건 검색 서비스</p>
+      </div>
+
+      <p class="copyright">
+        A1-3 AI Web Development Project
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
