@@ -1,6 +1,12 @@
-/* ==============================
+/* =========================================================
+   A1-3 파산픽 AI
+   main.js
+========================================================= */
+
+
+/* =========================================================
    Dark Mode
-================================ */
+========================================================= */
 
 const themeToggle =
   document.getElementById("theme-toggle");
@@ -46,7 +52,8 @@ if (themeToggle) {
           "light"
         );
 
-        themeToggle.textContent = "🌙";
+        themeToggle.textContent =
+          "🌙";
 
       } else {
 
@@ -60,7 +67,9 @@ if (themeToggle) {
           "dark"
         );
 
-        themeToggle.textContent = "☀️";
+        themeToggle.textContent =
+          "☀️";
+
       }
 
     }
@@ -69,47 +78,114 @@ if (themeToggle) {
 }
 
 
-/* ==============================
+/* =========================================================
+   Google Analytics
+========================================================= */
+
+/*
+  index.html / search.html / about.html의 <head>에
+  Google Analytics gtag 코드가 설치되어 있다는 전제다.
+
+  Analytics가 로드되지 않았더라도
+  웹사이트의 나머지 기능에는 영향을 주지 않는다.
+*/
+
+function trackEvent(
+  eventName,
+  parameters = {}
+) {
+
+  if (
+    typeof window.gtag
+    !== "function"
+  ) {
+
+    return;
+
+  }
+
+
+  window.gtag(
+    "event",
+    eventName,
+    parameters
+  );
+
+}
+
+
+/* =========================================================
    Search Page Elements
-================================ */
+========================================================= */
 
 const searchForm =
-  document.getElementById("search-form");
+  document.getElementById(
+    "search-form"
+  );
 
 const searchInput =
-  document.getElementById("search-input");
+  document.getElementById(
+    "search-input"
+  );
 
 const searchButton =
-  document.getElementById("search-button");
+  document.getElementById(
+    "search-button"
+  );
 
 const characterCount =
-  document.getElementById("character-count");
+  document.getElementById(
+    "character-count"
+  );
 
 const searchMessage =
-  document.getElementById("search-message");
+  document.getElementById(
+    "search-message"
+  );
 
 const loadingSection =
-  document.getElementById("loading-section");
+  document.getElementById(
+    "loading-section"
+  );
 
 const conditionSection =
-  document.getElementById("condition-section");
+  document.getElementById(
+    "condition-section"
+  );
 
 const resultsSection =
-  document.getElementById("results-section");
+  document.getElementById(
+    "results-section"
+  );
 
 const conditionList =
-  document.getElementById("condition-list");
+  document.getElementById(
+    "condition-list"
+  );
 
 const auctionResults =
-  document.getElementById("auction-results");
+  document.getElementById(
+    "auction-results"
+  );
 
 const resultCount =
-  document.getElementById("result-count");
+  document.getElementById(
+    "result-count"
+  );
 
 
-/* ==============================
+/* =========================================================
    URL Example Query
-================================ */
+========================================================= */
+
+/*
+  index.html에서:
+
+  search.html?example=대전에 있는...
+
+  형태로 넘어온 검색어를
+  검색창에 자동 입력한다.
+*/
 
 if (searchInput) {
 
@@ -132,9 +208,9 @@ if (searchInput) {
 }
 
 
-/* ==============================
+/* =========================================================
    Character Counter
-================================ */
+========================================================= */
 
 function updateCharacterCount() {
 
@@ -142,7 +218,9 @@ function updateCharacterCount() {
     !searchInput
     || !characterCount
   ) {
+
     return;
+
   }
 
 
@@ -164,9 +242,9 @@ if (searchInput) {
 }
 
 
-/* ==============================
-   Quick Search
-================================ */
+/* =========================================================
+   Quick Search Buttons
+========================================================= */
 
 const quickSearchButtons =
   document.querySelectorAll(
@@ -187,10 +265,11 @@ quickSearchButtons.forEach(
 
 
         searchInput.value =
-          button.dataset.query;
+          button.dataset.query || "";
 
 
         updateCharacterCount();
+
 
         searchInput.focus();
 
@@ -201,9 +280,9 @@ quickSearchButtons.forEach(
 );
 
 
-/* ==============================
+/* =========================================================
    Price Formatter
-================================ */
+========================================================= */
 
 function formatPrice(price) {
 
@@ -211,28 +290,56 @@ function formatPrice(price) {
     price === null
     || price === undefined
   ) {
+
     return "-";
+
   }
 
 
-  if (price >= 100000000) {
+  const numericPrice =
+    Number(price);
+
+
+  if (
+    Number.isNaN(
+      numericPrice
+    )
+  ) {
+
+    return "-";
+
+  }
+
+
+  /* 1억원 이상 */
+
+  if (
+    numericPrice
+    >= 100000000
+  ) {
 
     const eok =
       Math.floor(
-        price / 100000000
+        numericPrice
+        / 100000000
       );
 
+
     const remainder =
-      price % 100000000;
+      numericPrice
+      % 100000000;
 
 
-    if (remainder >= 10000) {
+    const manwon =
+      Math.floor(
+        remainder
+        / 10000
+      );
 
-      const manwon =
-        Math.floor(
-          remainder / 10000
-        );
 
+    if (
+      manwon > 0
+    ) {
 
       return (
         `${eok}억 `
@@ -247,11 +354,17 @@ function formatPrice(price) {
   }
 
 
-  if (price >= 10000) {
+  /* 1만원 이상 */
+
+  if (
+    numericPrice
+    >= 10000
+  ) {
 
     const manwon =
       Math.floor(
-        price / 10000
+        numericPrice
+        / 10000
       );
 
 
@@ -263,15 +376,15 @@ function formatPrice(price) {
 
 
   return (
-    `${price.toLocaleString("ko-KR")}원`
+    `${numericPrice.toLocaleString("ko-KR")}원`
   );
 
 }
 
 
-/* ==============================
+/* =========================================================
    Message
-================================ */
+========================================================= */
 
 function showMessage(
   message,
@@ -292,7 +405,9 @@ function showMessage(
   );
 
 
-  if (type === "error") {
+  if (
+    type === "error"
+  ) {
 
     searchMessage.classList.add(
       "error"
@@ -320,9 +435,9 @@ function hideMessage() {
 }
 
 
-/* ==============================
+/* =========================================================
    Condition Rendering
-================================ */
+========================================================= */
 
 function renderConditions(
   conditions
@@ -336,20 +451,30 @@ function renderConditions(
   const items = [];
 
 
+  /* 지역 */
+
   if (
-    conditions.regions
+    Array.isArray(
+      conditions.regions
+    )
     && conditions.regions.length > 0
   ) {
 
     items.push([
       "지역",
-      conditions.regions.join(" · ")
+      conditions.regions.join(
+        " · "
+      )
     ]);
 
   }
 
 
-  if (conditions.category) {
+  /* 자산 유형 */
+
+  if (
+    conditions.category
+  ) {
 
     items.push([
       "자산유형",
@@ -359,7 +484,11 @@ function renderConditions(
   }
 
 
-  if (conditions.subcategory) {
+  /* 세부 유형 */
+
+  if (
+    conditions.subcategory
+  ) {
 
     items.push([
       "세부유형",
@@ -369,7 +498,11 @@ function renderConditions(
   }
 
 
-  if (conditions.max_price) {
+  /* 최대 가격 */
+
+  if (
+    conditions.max_price
+  ) {
 
     items.push([
       "최대가격",
@@ -381,7 +514,11 @@ function renderConditions(
   }
 
 
-  if (conditions.min_price) {
+  /* 최소 가격 */
+
+  if (
+    conditions.min_price
+  ) {
 
     items.push([
       "최소가격",
@@ -393,7 +530,11 @@ function renderConditions(
   }
 
 
-  if (conditions.bid_within_days) {
+  /* 입찰 기간 */
+
+  if (
+    conditions.bid_within_days
+  ) {
 
     items.push([
       "입찰기간",
@@ -402,6 +543,8 @@ function renderConditions(
 
   }
 
+
+  /* 정렬 */
 
   if (
     conditions.sort
@@ -423,7 +566,9 @@ function renderConditions(
   }
 
 
-  if (items.length === 0) {
+  if (
+    items.length === 0
+  ) {
 
     items.push([
       "검색",
@@ -448,9 +593,9 @@ function renderConditions(
 }
 
 
-/* ==============================
+/* =========================================================
    Result Rendering
-================================ */
+========================================================= */
 
 function renderResults(
   results
@@ -460,7 +605,9 @@ function renderResults(
     !auctionResults
     || !resultCount
   ) {
+
     return;
+
   }
 
 
@@ -468,7 +615,11 @@ function renderResults(
     `${results.length}건`;
 
 
-  if (results.length === 0) {
+  /* 검색 결과 없음 */
+
+  if (
+    results.length === 0
+  ) {
 
     auctionResults.innerHTML = `
       <div class="result-empty">
@@ -485,10 +636,13 @@ function renderResults(
       </div>
     `;
 
+
     return;
 
   }
 
+
+  /* 검색 결과 카드 */
 
   auctionResults.innerHTML =
     results
@@ -498,29 +652,29 @@ function renderResults(
           <article
             class="auction-card"
             style="animation-delay:
-              ${index * 0.06}s"
+            ${index * 0.06}s"
           >
 
             <div class="auction-card-top">
 
               <span class="asset-badge">
-                ${item.category}
+                ${item.category || "-"}
               </span>
 
               <span>
-                ${item.round}회차
+                ${item.round || "-"}회차
               </span>
 
             </div>
 
 
             <h3>
-              ${item.title}
+              ${item.title || "물건명 없음"}
             </h3>
 
 
             <p class="auction-location">
-              ${item.location}
+              ${item.location || "-"}
             </p>
 
 
@@ -536,7 +690,10 @@ function renderResults(
                 )}
               </strong>
 
-              <small class="auction-reference-price">
+
+              <small
+                class="auction-reference-price"
+              >
                 기준가
                 ${formatPrice(
                   item.reference_value
@@ -550,57 +707,75 @@ function renderResults(
 
               <div>
                 <dt>관할법원</dt>
+
                 <dd>
-                  ${item.court}
+                  ${item.court || "-"}
                 </dd>
               </div>
+
 
               <div>
                 <dt>사건번호</dt>
+
                 <dd>
-                  ${item.case_number}
+                  ${item.case_number || "-"}
                 </dd>
               </div>
+
 
               <div>
                 <dt>입찰일</dt>
+
                 <dd>
-                  ${item.bid_date}
+                  ${item.bid_date || "-"}
                 </dd>
               </div>
+
 
               <div>
                 <dt>입찰회차</dt>
+
                 <dd>
-                  ${item.round}회
+                  ${item.round || "-"}회
                 </dd>
               </div>
+
 
               <div>
                 <dt>입찰방식</dt>
+
                 <dd>
-                  ${item.method}
+                  ${item.method || "-"}
                 </dd>
               </div>
+
 
               <div>
                 <dt>입찰보증금</dt>
+
                 <dd>
-                  ${item.deposit_rate}%
+                  ${
+                    item.deposit_rate
+                    ?? 0
+                  }%
                 </dd>
               </div>
+
 
               <div>
                 <dt>파산관재인</dt>
+
                 <dd>
-                  ${item.trustee_name}
+                  ${item.trustee_name || "-"}
                 </dd>
               </div>
 
+
               <div>
                 <dt>관재인 연락처</dt>
+
                 <dd>
-                  ${item.trustee_phone}
+                  ${item.trustee_phone || "-"}
                 </dd>
               </div>
 
@@ -615,7 +790,10 @@ function renderResults(
 
               <br>
 
-              ${item.recommendation_reason}
+              ${
+                item.recommendation_reason
+                || "검색 조건에 부합하는 물건입니다."
+              }
 
             </p>
 
@@ -628,9 +806,9 @@ function renderResults(
 }
 
 
-/* ==============================
+/* =========================================================
    API Request
-================================ */
+========================================================= */
 
 async function requestAuctionSearch(
   query
@@ -640,9 +818,18 @@ async function requestAuctionSearch(
     new AbortController();
 
 
+  /*
+    AI API 호출 + Vercel Function 실행시간을 고려해
+    30초 후 요청을 중단한다.
+  */
+
   const timeout =
     setTimeout(
-      () => controller.abort(),
+      () => {
+
+        controller.abort();
+
+      },
       30000
     );
 
@@ -653,19 +840,25 @@ async function requestAuctionSearch(
       await fetch(
         "/api/search",
         {
-          method: "POST",
+
+          method:
+            "POST",
 
           headers: {
+
             "Content-Type":
               "application/json"
+
           },
 
-          body: JSON.stringify({
-            query: query
-          }),
+          body:
+            JSON.stringify({
+              query: query
+            }),
 
           signal:
             controller.signal
+
         }
       );
 
@@ -687,7 +880,9 @@ async function requestAuctionSearch(
     }
 
 
-    if (!response.ok) {
+    if (
+      !response.ok
+    ) {
 
       throw new Error(
         data.error
@@ -711,9 +906,9 @@ async function requestAuctionSearch(
 }
 
 
-/* ==============================
+/* =========================================================
    Search Submit
-================================ */
+========================================================= */
 
 if (searchForm) {
 
@@ -725,25 +920,37 @@ if (searchForm) {
 
 
       const query =
-        searchInput.value.trim();
+        searchInput
+          ? searchInput.value.trim()
+          : "";
 
+
+      /* 기존 메시지 숨김 */
 
       hideMessage();
 
 
+      /* 기존 결과 숨김 */
+
       if (conditionSection) {
-        conditionSection.hidden = true;
+
+        conditionSection.hidden =
+          true;
+
       }
 
 
       if (resultsSection) {
-        resultsSection.hidden = true;
+
+        resultsSection.hidden =
+          true;
+
       }
 
 
-      /* --------------------------
-         Empty Input
-      -------------------------- */
+      /* -----------------------------------------------------
+         빈 입력 처리
+      ----------------------------------------------------- */
 
       if (!query) {
 
@@ -751,16 +958,31 @@ if (searchForm) {
           "검색 조건을 입력해주세요."
         );
 
-        searchInput.focus();
+
+        if (searchInput) {
+
+          searchInput.focus();
+
+        }
+
 
         return;
 
       }
 
 
-      /* --------------------------
+      /* -----------------------------------------------------
+         GA4 - AI 검색 실행
+      ----------------------------------------------------- */
+
+      trackEvent(
+        "ai_search"
+      );
+
+
+      /* -----------------------------------------------------
          Loading
-      -------------------------- */
+      ----------------------------------------------------- */
 
       if (searchButton) {
 
@@ -783,9 +1005,9 @@ if (searchForm) {
 
       try {
 
-        /* --------------------------
-           Real Python API Call
-        -------------------------- */
+        /* ---------------------------------------------------
+           Python + Gemini API 호출
+        --------------------------------------------------- */
 
         const data =
           await requestAuctionSearch(
@@ -793,21 +1015,75 @@ if (searchForm) {
           );
 
 
-        /* --------------------------
-           Render
-        -------------------------- */
+        const results =
+          Array.isArray(
+            data.results
+          )
+            ? data.results
+            : [];
+
+
+        /* ---------------------------------------------------
+           GA4 - 검색 성공 / 결과 없음
+        --------------------------------------------------- */
+
+        if (
+          results.length > 0
+        ) {
+
+          trackEvent(
+            "search_success",
+            {
+
+              result_count:
+                results.length,
+
+              asset_category:
+                data.conditions
+                  ?.category
+                || "all"
+
+            }
+          );
+
+        } else {
+
+          trackEvent(
+            "search_no_result",
+            {
+
+              asset_category:
+                data.conditions
+                  ?.category
+                || "all"
+
+            }
+          );
+
+        }
+
+
+        /* ---------------------------------------------------
+           검색조건 화면 표시
+        --------------------------------------------------- */
 
         renderConditions(
-          data.conditions
+          data.conditions || {}
         );
 
+
+        /* ---------------------------------------------------
+           결과 화면 표시
+        --------------------------------------------------- */
 
         renderResults(
-          data.results
+          results
         );
 
 
-        if (conditionSection) {
+        if (
+          conditionSection
+        ) {
 
           conditionSection.hidden =
             false;
@@ -815,7 +1091,9 @@ if (searchForm) {
         }
 
 
-        if (resultsSection) {
+        if (
+          resultsSection
+        ) {
 
           resultsSection.hidden =
             false;
@@ -823,17 +1101,56 @@ if (searchForm) {
         }
 
 
-        if (conditionSection) {
+        /* ---------------------------------------------------
+           결과 영역으로 부드러운 이동
+        --------------------------------------------------- */
 
-          conditionSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          });
+        if (
+          conditionSection
+        ) {
+
+          conditionSection.scrollIntoView(
+            {
+
+              behavior:
+                "smooth",
+
+              block:
+                "start"
+
+            }
+          );
 
         }
 
 
       } catch (error) {
+
+        console.error(
+          "Search Error:",
+          error
+        );
+
+
+        /* ---------------------------------------------------
+           GA4 - 검색 오류
+        --------------------------------------------------- */
+
+        trackEvent(
+          "search_error",
+          {
+
+            error_type:
+              error.name
+              || "unknown"
+
+          }
+        );
+
+
+        /* ---------------------------------------------------
+           타임아웃
+        --------------------------------------------------- */
 
         if (
           error.name
@@ -846,14 +1163,13 @@ if (searchForm) {
 
         } else {
 
-          console.error(
-            error
-          );
-
+          /* -------------------------------------------------
+             일반 API 오류
+          ------------------------------------------------- */
 
           showMessage(
             error.message
-            || "검색 중 오류가 발생했습니다."
+            || "AI 검색 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요."
           );
 
         }
@@ -861,7 +1177,13 @@ if (searchForm) {
 
       } finally {
 
-        if (loadingSection) {
+        /* ---------------------------------------------------
+           Loading 종료
+        --------------------------------------------------- */
+
+        if (
+          loadingSection
+        ) {
 
           loadingSection.hidden =
             true;
@@ -869,14 +1191,25 @@ if (searchForm) {
         }
 
 
-        if (searchButton) {
+        /* ---------------------------------------------------
+           검색 버튼 복구
+        --------------------------------------------------- */
+
+        if (
+          searchButton
+        ) {
 
           searchButton.disabled =
             false;
 
+
           searchButton.innerHTML =
-            `AI로 검색하기
-             <span aria-hidden="true">→</span>`;
+            `
+              AI로 검색하기
+              <span aria-hidden="true">
+                →
+              </span>
+            `;
 
         }
 
