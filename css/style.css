@@ -1421,3 +1421,43 @@ textarea {
   }
 
 }
+
+/* ==============================
+   API Result Extra Styles
+================================ */
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+.auction-reference-price {
+  margin-top: 2px;
+
+  color: var(--text-soft);
+
+  font-size: 12px;
+}
+
+
+.result-empty {
+  grid-column: 1 / -1;
+
+  padding: 40px;
+
+  text-align: center;
+
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+
+  background: var(--surface);
+}
+
+
+.result-empty p {
+  margin: 8px 0 0;
+
+  color: var(--text-soft);
+}

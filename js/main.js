@@ -1,54 +1,86 @@
-const themeToggle = document.getElementById("theme-toggle");
+/* ==============================
+   Dark Mode
+================================ */
 
-const savedTheme = localStorage.getItem("theme");
+const themeToggle =
+  document.getElementById("theme-toggle");
+
+const savedTheme =
+  localStorage.getItem("theme");
+
 
 if (savedTheme === "dark") {
-  document.documentElement.setAttribute("data-theme", "dark");
+
+  document.documentElement.setAttribute(
+    "data-theme",
+    "dark"
+  );
 
   if (themeToggle) {
     themeToggle.textContent = "☀️";
   }
+
 }
 
 
 if (themeToggle) {
 
-  themeToggle.addEventListener("click", () => {
+  themeToggle.addEventListener(
+    "click",
+    () => {
 
-    const currentTheme =
-      document.documentElement.getAttribute("data-theme");
+      const currentTheme =
+        document.documentElement.getAttribute(
+          "data-theme"
+        );
 
-    if (currentTheme === "dark") {
 
-      document.documentElement.removeAttribute("data-theme");
+      if (currentTheme === "dark") {
 
-      localStorage.setItem("theme", "light");
+        document.documentElement.removeAttribute(
+          "data-theme"
+        );
 
-      themeToggle.textContent = "🌙";
+        localStorage.setItem(
+          "theme",
+          "light"
+        );
 
-    } else {
+        themeToggle.textContent = "🌙";
 
-      document.documentElement.setAttribute(
-        "data-theme",
-        "dark"
-      );
+      } else {
 
-      localStorage.setItem("theme", "dark");
+        document.documentElement.setAttribute(
+          "data-theme",
+          "dark"
+        );
 
-      themeToggle.textContent = "☀️";
+        localStorage.setItem(
+          "theme",
+          "dark"
+        );
+
+        themeToggle.textContent = "☀️";
+      }
+
     }
-
-  });
+  );
 
 }
 
+
 /* ==============================
-   Search Page
+   Search Page Elements
 ================================ */
 
-const searchForm = document.getElementById("search-form");
-const searchInput = document.getElementById("search-input");
-const searchButton = document.getElementById("search-button");
+const searchForm =
+  document.getElementById("search-form");
+
+const searchInput =
+  document.getElementById("search-input");
+
+const searchButton =
+  document.getElementById("search-button");
 
 const characterCount =
   document.getElementById("character-count");
@@ -75,30 +107,44 @@ const resultCount =
   document.getElementById("result-count");
 
 
-/* URL의 example 파라미터 처리 */
+/* ==============================
+   URL Example Query
+================================ */
 
 if (searchInput) {
 
   const params =
-    new URLSearchParams(window.location.search);
+    new URLSearchParams(
+      window.location.search
+    );
 
   const exampleQuery =
     params.get("example");
 
+
   if (exampleQuery) {
-    searchInput.value = exampleQuery;
+
+    searchInput.value =
+      exampleQuery;
+
   }
 
 }
 
 
-/* 글자수 표시 */
+/* ==============================
+   Character Counter
+================================ */
 
 function updateCharacterCount() {
 
-  if (!searchInput || !characterCount) {
+  if (
+    !searchInput
+    || !characterCount
+  ) {
     return;
   }
+
 
   characterCount.textContent =
     `${searchInput.value.length} / 300`;
@@ -118,227 +164,562 @@ if (searchInput) {
 }
 
 
-/* 검색 예시 버튼 */
+/* ==============================
+   Quick Search
+================================ */
 
 const quickSearchButtons =
-  document.querySelectorAll(".quick-search-button");
+  document.querySelectorAll(
+    ".quick-search-button"
+  );
 
 
-quickSearchButtons.forEach((button) => {
+quickSearchButtons.forEach(
+  (button) => {
 
-  button.addEventListener("click", () => {
+    button.addEventListener(
+      "click",
+      () => {
 
-    if (!searchInput) {
-      return;
-    }
-
-    searchInput.value =
-      button.dataset.query;
-
-    updateCharacterCount();
-
-    searchInput.focus();
-
-  });
-
-});
+        if (!searchInput) {
+          return;
+        }
 
 
-/* 숫자를 원화 형태로 출력 */
+        searchInput.value =
+          button.dataset.query;
+
+
+        updateCharacterCount();
+
+        searchInput.focus();
+
+      }
+    );
+
+  }
+);
+
+
+/* ==============================
+   Price Formatter
+================================ */
 
 function formatPrice(price) {
+
+  if (
+    price === null
+    || price === undefined
+  ) {
+    return "-";
+  }
+
 
   if (price >= 100000000) {
 
     const eok =
-      price / 100000000;
+      Math.floor(
+        price / 100000000
+      );
 
-    return `${eok.toLocaleString("ko-KR")}억원`;
+    const remainder =
+      price % 100000000;
+
+
+    if (remainder >= 10000) {
+
+      const manwon =
+        Math.floor(
+          remainder / 10000
+        );
+
+
+      return (
+        `${eok}억 `
+        + `${manwon.toLocaleString("ko-KR")}만원`
+      );
+
+    }
+
+
+    return `${eok}억원`;
 
   }
+
 
   if (price >= 10000) {
 
     const manwon =
-      price / 10000;
+      Math.floor(
+        price / 10000
+      );
 
-    return `${manwon.toLocaleString("ko-KR")}만원`;
+
+    return (
+      `${manwon.toLocaleString("ko-KR")}만원`
+    );
 
   }
 
-  return `${price.toLocaleString("ko-KR")}원`;
+
+  return (
+    `${price.toLocaleString("ko-KR")}원`
+  );
 
 }
 
 
-/* 현재는 UI 테스트용 임시 검색 결과 */
+/* ==============================
+   Message
+================================ */
 
-const demoResults = [
-  {
-    category: "부동산",
-    title: "대전광역시 유성구 소재 토지",
-    location: "대전광역시 유성구 봉명동 123-1",
-    minimumPrice: 35000000,
-    court: "대전지방법원",
-    round: 2,
-    bidDate: "2026-09-10",
-    caseNumber: "2026하합1001",
-    reason:
-      "요청한 지역과 자산 유형에 부합하며 최저가격이 5천만원 이하입니다."
-  },
+function showMessage(
+  message,
+  type = "error"
+) {
 
-  {
-    category: "부동산",
-    title: "대전광역시 서구 소재 상가",
-    location: "대전광역시 서구 둔산동 245-2",
-    minimumPrice: 42000000,
-    court: "대전지방법원",
-    round: 3,
-    bidDate: "2026-09-18",
-    caseNumber: "2026하단1012",
-    reason:
-      "예산 범위 안에 있으며 3회차 매각으로 가격 조건이 상대적으로 낮습니다."
-  },
-
-  {
-    category: "부동산",
-    title: "세종특별자치시 소재 토지",
-    location: "세종특별자치시 나성동 138-4",
-    minimumPrice: 48000000,
-    court: "대전지방법원",
-    round: 2,
-    bidDate: "2026-09-25",
-    caseNumber: "2026하합1027",
-    reason:
-      "검색 범위에 포함된 세종 지역의 부동산이며 설정한 예산을 충족합니다."
+  if (!searchMessage) {
+    return;
   }
-];
 
 
-/* 조건 표시 */
+  searchMessage.textContent =
+    message;
 
-function renderConditions() {
+
+  searchMessage.classList.remove(
+    "error"
+  );
+
+
+  if (type === "error") {
+
+    searchMessage.classList.add(
+      "error"
+    );
+
+  }
+
+
+  searchMessage.hidden =
+    false;
+
+}
+
+
+function hideMessage() {
+
+  if (!searchMessage) {
+    return;
+  }
+
+
+  searchMessage.hidden =
+    true;
+
+}
+
+
+/* ==============================
+   Condition Rendering
+================================ */
+
+function renderConditions(
+  conditions
+) {
 
   if (!conditionList) {
     return;
   }
 
-  const conditions = [
-    ["지역", "대전 · 세종"],
-    ["자산유형", "부동산"],
-    ["최대가격", "5,000만원"],
-    ["정렬", "입찰일 가까운 순"]
-  ];
+
+  const items = [];
+
+
+  if (
+    conditions.regions
+    && conditions.regions.length > 0
+  ) {
+
+    items.push([
+      "지역",
+      conditions.regions.join(" · ")
+    ]);
+
+  }
+
+
+  if (conditions.category) {
+
+    items.push([
+      "자산유형",
+      conditions.category
+    ]);
+
+  }
+
+
+  if (conditions.subcategory) {
+
+    items.push([
+      "세부유형",
+      conditions.subcategory
+    ]);
+
+  }
+
+
+  if (conditions.max_price) {
+
+    items.push([
+      "최대가격",
+      formatPrice(
+        conditions.max_price
+      )
+    ]);
+
+  }
+
+
+  if (conditions.min_price) {
+
+    items.push([
+      "최소가격",
+      formatPrice(
+        conditions.min_price
+      )
+    ]);
+
+  }
+
+
+  if (conditions.bid_within_days) {
+
+    items.push([
+      "입찰기간",
+      `${conditions.bid_within_days}일 이내`
+    ]);
+
+  }
+
+
+  if (
+    conditions.sort
+    === "minimum_price"
+  ) {
+
+    items.push([
+      "정렬",
+      "최저가 낮은 순"
+    ]);
+
+  } else {
+
+    items.push([
+      "정렬",
+      "입찰일 가까운 순"
+    ]);
+
+  }
+
+
+  if (items.length === 0) {
+
+    items.push([
+      "검색",
+      "전체 물건"
+    ]);
+
+  }
 
 
   conditionList.innerHTML =
-    conditions
-      .map(([label, value]) => `
-        <div class="condition-chip">
-          <strong>${label}</strong>
-          &nbsp;${value}
-        </div>
-      `)
+    items
+      .map(
+        ([label, value]) => `
+          <div class="condition-chip">
+            <strong>${label}</strong>
+            &nbsp;${value}
+          </div>
+        `
+      )
       .join("");
 
 }
 
 
-/* 검색 결과 표시 */
+/* ==============================
+   Result Rendering
+================================ */
 
-function renderResults() {
+function renderResults(
+  results
+) {
 
-  if (!auctionResults || !resultCount) {
+  if (
+    !auctionResults
+    || !resultCount
+  ) {
     return;
   }
 
 
   resultCount.textContent =
-    `${demoResults.length}건`;
+    `${results.length}건`;
+
+
+  if (results.length === 0) {
+
+    auctionResults.innerHTML = `
+      <div class="result-empty">
+
+        <strong>
+          조건에 맞는 매각물건을 찾지 못했습니다.
+        </strong>
+
+        <p>
+          지역이나 가격 조건을 넓혀서
+          다시 검색해보세요.
+        </p>
+
+      </div>
+    `;
+
+    return;
+
+  }
 
 
   auctionResults.innerHTML =
-    demoResults
-      .map((item) => `
+    results
+      .map(
+        (item, index) => `
 
-        <article class="auction-card">
+          <article
+            class="auction-card"
+            style="animation-delay:
+              ${index * 0.06}s"
+          >
 
-          <div class="auction-card-top">
+            <div class="auction-card-top">
 
-            <span class="asset-badge">
-              ${item.category}
-            </span>
+              <span class="asset-badge">
+                ${item.category}
+              </span>
 
-            <span>
-              ${item.round}회차
-            </span>
+              <span>
+                ${item.round}회차
+              </span>
 
-          </div>
-
-
-          <h3>${item.title}</h3>
-
-          <p class="auction-location">
-            ${item.location}
-          </p>
-
-
-          <div class="auction-price">
-
-            <span>최저입찰가</span>
-
-            <strong>
-              ${formatPrice(item.minimumPrice)}
-            </strong>
-
-          </div>
-
-
-          <dl class="auction-info">
-
-            <div>
-              <dt>관할법원</dt>
-              <dd>${item.court}</dd>
             </div>
 
-            <div>
-              <dt>사건번호</dt>
-              <dd>${item.caseNumber}</dd>
+
+            <h3>
+              ${item.title}
+            </h3>
+
+
+            <p class="auction-location">
+              ${item.location}
+            </p>
+
+
+            <div class="auction-price">
+
+              <span>
+                최저입찰가
+              </span>
+
+              <strong>
+                ${formatPrice(
+                  item.minimum_price
+                )}
+              </strong>
+
+              <small class="auction-reference-price">
+                기준가
+                ${formatPrice(
+                  item.reference_value
+                )}
+              </small>
+
             </div>
 
-            <div>
-              <dt>입찰일</dt>
-              <dd>${item.bidDate}</dd>
-            </div>
 
-            <div>
-              <dt>입찰회차</dt>
-              <dd>${item.round}회</dd>
-            </div>
+            <dl class="auction-info">
 
-          </dl>
+              <div>
+                <dt>관할법원</dt>
+                <dd>
+                  ${item.court}
+                </dd>
+              </div>
+
+              <div>
+                <dt>사건번호</dt>
+                <dd>
+                  ${item.case_number}
+                </dd>
+              </div>
+
+              <div>
+                <dt>입찰일</dt>
+                <dd>
+                  ${item.bid_date}
+                </dd>
+              </div>
+
+              <div>
+                <dt>입찰회차</dt>
+                <dd>
+                  ${item.round}회
+                </dd>
+              </div>
+
+              <div>
+                <dt>입찰방식</dt>
+                <dd>
+                  ${item.method}
+                </dd>
+              </div>
+
+              <div>
+                <dt>입찰보증금</dt>
+                <dd>
+                  ${item.deposit_rate}%
+                </dd>
+              </div>
+
+              <div>
+                <dt>파산관재인</dt>
+                <dd>
+                  ${item.trustee_name}
+                </dd>
+              </div>
+
+              <div>
+                <dt>관재인 연락처</dt>
+                <dd>
+                  ${item.trustee_phone}
+                </dd>
+              </div>
+
+            </dl>
 
 
-          <p class="recommendation-text">
-            <strong>추천 이유</strong><br>
-            ${item.reason}
-          </p>
+            <p class="recommendation-text">
 
-        </article>
+              <strong>
+                추천 이유
+              </strong>
 
-      `)
+              <br>
+
+              ${item.recommendation_reason}
+
+            </p>
+
+          </article>
+
+        `
+      )
       .join("");
 
 }
 
 
-/* 검색 실행 */
+/* ==============================
+   API Request
+================================ */
+
+async function requestAuctionSearch(
+  query
+) {
+
+  const controller =
+    new AbortController();
+
+
+  const timeout =
+    setTimeout(
+      () => controller.abort(),
+      30000
+    );
+
+
+  try {
+
+    const response =
+      await fetch(
+        "/api/search",
+        {
+          method: "POST",
+
+          headers: {
+            "Content-Type":
+              "application/json"
+          },
+
+          body: JSON.stringify({
+            query: query
+          }),
+
+          signal:
+            controller.signal
+        }
+      );
+
+
+    let data;
+
+
+    try {
+
+      data =
+        await response.json();
+
+    } catch {
+
+      throw new Error(
+        "서버 응답을 처리할 수 없습니다."
+      );
+
+    }
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        data.error
+        || "검색 요청에 실패했습니다."
+      );
+
+    }
+
+
+    return data;
+
+
+  } finally {
+
+    clearTimeout(
+      timeout
+    );
+
+  }
+
+}
+
+
+/* ==============================
+   Search Submit
+================================ */
 
 if (searchForm) {
 
   searchForm.addEventListener(
     "submit",
-    (event) => {
+    async (event) => {
 
       event.preventDefault();
 
@@ -347,22 +728,28 @@ if (searchForm) {
         searchInput.value.trim();
 
 
-      searchMessage.hidden = true;
-
-      conditionSection.hidden = true;
-      resultsSection.hidden = true;
+      hideMessage();
 
 
-      /* 빈 입력 처리 */
+      if (conditionSection) {
+        conditionSection.hidden = true;
+      }
+
+
+      if (resultsSection) {
+        resultsSection.hidden = true;
+      }
+
+
+      /* --------------------------
+         Empty Input
+      -------------------------- */
 
       if (!query) {
 
-        searchMessage.textContent =
-          "검색 조건을 입력해주세요.";
-
-        searchMessage.classList.add("error");
-
-        searchMessage.hidden = false;
+        showMessage(
+          "검색 조건을 입력해주세요."
+        );
 
         searchInput.focus();
 
@@ -371,45 +758,129 @@ if (searchForm) {
       }
 
 
-      /* 버튼 중복 클릭 방지 */
+      /* --------------------------
+         Loading
+      -------------------------- */
 
-      searchButton.disabled = true;
+      if (searchButton) {
 
-      searchButton.textContent =
-        "검색 중...";
+        searchButton.disabled =
+          true;
 
+        searchButton.textContent =
+          "검색 중...";
 
-      loadingSection.hidden = false;
-
-
-      /*
-        현재는 API를 아직 연결하지 않았기 때문에
-        1.2초 후 임시 결과를 표시한다.
-      */
-
-      setTimeout(() => {
-
-        loadingSection.hidden = true;
-
-        renderConditions();
-        renderResults();
-
-        conditionSection.hidden = false;
-        resultsSection.hidden = false;
+      }
 
 
-        searchButton.disabled = false;
+      if (loadingSection) {
 
-        searchButton.innerHTML =
-          `AI로 검색하기 <span aria-hidden="true">→</span>`;
+        loadingSection.hidden =
+          false;
+
+      }
 
 
-        conditionSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
+      try {
 
-      }, 1200);
+        /* --------------------------
+           Real Python API Call
+        -------------------------- */
+
+        const data =
+          await requestAuctionSearch(
+            query
+          );
+
+
+        /* --------------------------
+           Render
+        -------------------------- */
+
+        renderConditions(
+          data.conditions
+        );
+
+
+        renderResults(
+          data.results
+        );
+
+
+        if (conditionSection) {
+
+          conditionSection.hidden =
+            false;
+
+        }
+
+
+        if (resultsSection) {
+
+          resultsSection.hidden =
+            false;
+
+        }
+
+
+        if (conditionSection) {
+
+          conditionSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+        }
+
+
+      } catch (error) {
+
+        if (
+          error.name
+          === "AbortError"
+        ) {
+
+          showMessage(
+            "응답이 지연되고 있습니다. 잠시 후 다시 시도해주세요."
+          );
+
+        } else {
+
+          console.error(
+            error
+          );
+
+
+          showMessage(
+            error.message
+            || "검색 중 오류가 발생했습니다."
+          );
+
+        }
+
+
+      } finally {
+
+        if (loadingSection) {
+
+          loadingSection.hidden =
+            true;
+
+        }
+
+
+        if (searchButton) {
+
+          searchButton.disabled =
+            false;
+
+          searchButton.innerHTML =
+            `AI로 검색하기
+             <span aria-hidden="true">→</span>`;
+
+        }
+
+      }
 
     }
   );
